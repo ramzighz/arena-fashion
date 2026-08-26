@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    
+    <!-- Dynamic Title & Meta -->
+    <title>Arena Fashion | Casual Menswear, Selvedge Denim, Heavy Sweats & Footwear</title>
+    <meta name="description" content="Arena Fashion crafts premium casual menswear. Heavyweight 500 GSM loopback hoodies, Japanese selvedge denim, heavy flannel shirts, and iconic footwear." />
+    <meta name="keywords" content="menswear, streetwear, selvedge denim, heavy hoodies, flannels, air max 90, air force 1, casual clothing for men" />
+    <meta name="author" content="Arena Fashion" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#090a0f" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arena Fashion | Premium Casual Menswear & Streetwear Essentials" />
+    <meta property="og:description" content="Elevate daily casual wear with 14.5oz Japanese selvedge jeans, 500 GSM French terry sweats, heavy twill flannels, and iconic footwear." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="og:url" content="https://arenafashion.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arena Fashion | Casual Menswear & Footwear" />
+    <meta name="twitter:description" content="Everyday casual menswear engineered with heavy fabrics, relaxed cuts, and iconic sneakers." />
+
+    <!-- Favicon SVG (Custom Geometric A Emblem) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23090a0f'/%3E%3Cpath d='M10 26L16 8L22 26H18L16 20L14 26H10Z' fill='%23f5f3ef'/%3E%3C/svg%3E" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ClothingStore",
+        "name": "Arena Fashion",
+        "image": "https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=1200&q=80",
+        "description": "Premium casual menswear featuring Japanese raw denim, heavyweight loopback sweats, flannels, and iconic sneakers.",
+        "url": "https://arenafashion.com",
+        "telephone": "+213-552-778-744",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "142 Mercer Street",
+          "addressLocality": "New York",
+          "addressRegion": "NY",
+          "postalCode": "10012",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.7246,
+          "longitude": -73.9984
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "11:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Sunday"],
+            "opens": "12:00",
+            "closes": "18:00"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-milano-50 dark:bg-obsidian text-milano-900 dark:text-milano-100 transition-colors duration-200 antialiased overflow-x-hidden min-h-screen">
+    <!-- Accessible Skip to Content Link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-milano-900 focus:text-white focus:rounded-md focus:shadow-lg focus:outline-none">
+      Skip to main content
+    </a>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

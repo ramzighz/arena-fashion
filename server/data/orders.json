@@ -1,0 +1,73 @@
+[
+  {
+    "orderId": "AF-LT2JVK",
+    "createdAt": "2026-08-26T18:28:51.451Z",
+    "items": [
+      {
+        "id": "001",
+        "name": "14.5oz Japanese Selvedge Straight Jean",
+        "size": "32x32",
+        "price": 8500,
+        "quantity": 1
+      }
+    ],
+    "subtotal": 8500,
+    "shipping": 800,
+    "total": 9300,
+    "currency": "DZD",
+    "status": "Pending",
+    "estimatedDelivery": "2 to 4 business days",
+    "shippingAddress": {
+      "fullName": "Test User",
+      "street": "123 Test St",
+      "city": "Algiers",
+      "state": "Algiers",
+      "country": "Algeria"
+    },
+    "contact": {
+      "phone": "0555000000"
+    },
+    "utmSource": "direct",
+    "utmCampaign": "organic"
+  },
+  {
+    "orderId": "AF-8K3N2P",
+    "createdAt": "2026-03-09T14:32:00Z",
+    "items": [
+      {
+        "id": "001",
+        "name": "14.5oz Japanese Selvedge Straight Jean",
+        "size": "32x32",
+        "price": 8500,
+        "quantity": 1
+      },
+      {
+        "id": "007",
+        "name": "Air Max 90 Premium Retro Runner",
+        "size": "US 10",
+        "price": 11800,
+        "quantity": 1
+      }
+    ],
+    "subtotal": 20300,
+    "shipping": 0,
+    "total": 20300,
+    "status": "Delivered",
+    "trackingNumber": "98321455",
+    "carrier": "Express Delivery Services",
+    "shippingAddress": {
+      "fullName": "Marcus Vance",
+      "street": "Didouche Mourad St",
+      "city": "Algiers",
+      "state": "Algiers",
+      "zip": "16000",
+      "country": "Algeria"
+    },
+    "contact": {
+      "email": "marcus@example.com",
+      "phone": "+213 555 0144"
+    },
+    "utmSource": "newsletter",
+    "utmCampaign": "spring_streetwear_2026"
+  }
+]

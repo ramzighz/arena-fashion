@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: arena-fashion
+    runtime: docker
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: SELLER_KEY
+        value: arena999
+      - key: ADMIN_EMAIL
+        value: admin@arenafashion.com
+      - key: ADMIN_PASSWORD
+        generateValue: true
+      - key: CLIENT_ORIGIN
+        sync: false

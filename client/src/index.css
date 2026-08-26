@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+  }
+  .dark ::-webkit-scrollbar-thumb {
+    background: #334155;
+  }
+}
+
+/* Print Stylesheet for Invoices / Receipts / Specs */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  nav, footer, .no-print, .cookie-banner, .back-to-top, .floating-contact {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .receipt-card {
+    border: 1px solid #000 !important;
+    box-shadow: none !important;
+    padding: 20px !important;
+  }
+}
