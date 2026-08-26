@@ -1,10 +1,12 @@
 FROM node:20-alpine
 
+RUN apk add --no-cache python3 make g++
+
 WORKDIR /app
 
 # Copy server dependencies
 COPY server/package*.json ./server/
-RUN cd server && npm install --production
+RUN cd server && npm install
 
 # Copy client and build
 COPY client/package*.json ./client/
