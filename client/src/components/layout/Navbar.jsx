@@ -43,16 +43,16 @@ export function Navbar() {
             </button>
 
             {/* Brand Logo: Geometric SVG Emblem + Wordmark */}
-            <Link to="/" className="flex items-center gap-2.5 group" aria-label="Arena Fashion Home">
-              <svg className="w-7 h-7 sm:w-8 sm:h-8 text-milano-900 dark:text-white transition-transform group-hover:scale-105" viewBox="0 0 32 32" fill="currentColor">
+            <Link to="/" className="flex items-center gap-2 sm:gap-2.5 group" aria-label="Arena Fashion Home">
+              <svg className="w-6 h-6 sm:w-8 sm:h-8 text-milano-900 dark:text-white transition-transform group-hover:scale-105" viewBox="0 0 32 32" fill="currentColor">
                 <rect width="32" height="32" rx="6" fill="currentColor" fillOpacity="0.08" />
                 <path d="M10 26L16 8L22 26H18L16 20L14 26H10Z" fill="currentColor" />
               </svg>
               <div className="flex flex-col">
-                <span className="font-extrabold text-lg sm:text-xl tracking-[0.2em] text-milano-900 dark:text-white leading-none uppercase">
+                <span className="font-extrabold text-base sm:text-xl tracking-[0.2em] text-milano-900 dark:text-white leading-none uppercase">
                   ARENA
                 </span>
-                <span className="text-[10px] uppercase tracking-widest text-milano-500 font-semibold mt-0.5">
+                <span className="text-[8px] sm:text-[10px] uppercase tracking-widest text-milano-500 font-semibold mt-0.5">
                   FASHION
                 </span>
               </div>
@@ -103,14 +103,14 @@ export function Navbar() {
             </Link>
           </nav>
 
-          {/* Right: Actions (Language Switcher, Search, Theme, Auth, Cart) */}
-          <div className="flex items-center gap-3 sm:gap-5">
+          {/* Right: Actions */}
+          <div className="flex items-center gap-2 sm:gap-5">
             
-            {/* Language Toggle: EN / FR */}
+            {/* Language Toggle: hidden on mobile (available in drawer) */}
             <button
               type="button"
               onClick={toggleLanguage}
-              className="px-3 py-2 rounded-lg border border-milano-200 dark:border-milano-700 bg-milano-100 dark:bg-milano-800 text-milano-900 dark:text-white text-xs font-extrabold flex items-center gap-1.5 hover:border-milano-400 dark:hover:border-milano-500 transition-colors shadow-sm"
+              className="hidden sm:flex px-3 py-2 rounded-lg border border-milano-200 dark:border-milano-700 bg-milano-100 dark:bg-milano-800 text-milano-900 dark:text-white text-xs font-extrabold items-center gap-1.5 hover:border-milano-400 dark:hover:border-milano-500 transition-colors shadow-sm"
               title={language === 'en' ? 'Basculer en Français' : 'Switch to English'}
               aria-label="Toggle language between English and French"
             >
@@ -122,12 +122,12 @@ export function Navbar() {
               </span>
             </button>
 
-            {/* Social Links */}
+            {/* Social Links - desktop only */}
             <a
               href="https://www.instagram.com/arena_babezouar/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:block p-2 text-milano-700 dark:text-milano-300 hover:text-milano-900 dark:hover:text-white transition-colors"
+              className="hidden lg:block p-2 text-milano-700 dark:text-milano-300 hover:text-milano-900 dark:hover:text-white transition-colors"
               aria-label="Instagram"
             >
               <Instagram className="w-5 h-5" />
@@ -136,7 +136,7 @@ export function Navbar() {
               href="https://www.facebook.com/arenafashion.bez/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:block p-2 text-milano-700 dark:text-milano-300 hover:text-milano-900 dark:hover:text-white transition-colors"
+              className="hidden lg:block p-2 text-milano-700 dark:text-milano-300 hover:text-milano-900 dark:hover:text-white transition-colors"
               aria-label="Facebook"
             >
               <Facebook className="w-5 h-5" />
@@ -152,11 +152,11 @@ export function Navbar() {
               <Search className="w-5 h-5" />
             </button>
 
-            {/* Dark / Light Mode Toggle */}
+            {/* Dark / Light Mode Toggle - hidden on mobile (available in drawer) */}
             <button
               type="button"
               onClick={toggleTheme}
-              className="p-2.5 text-milano-700 dark:text-milano-300 hover:text-milano-900 dark:hover:text-white transition-colors"
+              className="hidden sm:block p-2.5 text-milano-700 dark:text-milano-300 hover:text-milano-900 dark:hover:text-white transition-colors"
               aria-label="Toggle dark mode"
             >
               {isDark ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5" />}
@@ -165,11 +165,16 @@ export function Navbar() {
             {/* Cart Button */}
             <Link
               to="/cart"
-              className="flex items-center gap-2 px-3 py-2 rounded-lg bg-milano-900 dark:bg-white text-white dark:text-milano-900 text-xs font-bold uppercase tracking-wider hover:opacity-90 transition-opacity"
+              className="relative flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-2 rounded-lg bg-milano-900 dark:bg-white text-white dark:text-milano-900 text-xs font-bold uppercase tracking-wider hover:opacity-90 transition-opacity"
               aria-label={`Shopping bag with ${totalCount} items`}
             >
               <ShoppingBag className="w-4 h-4" />
-              <span>{totalCount > 0 ? `${t('nav.bag')} (${totalCount})` : t('nav.bag')}</span>
+              <span className="hidden sm:inline">{t('nav.bag')}</span>
+              {totalCount > 0 && (
+                <span className="absolute -top-1.5 -right-1.5 sm:static sm:ml-0.5 bg-red-500 text-white text-[10px] font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center leading-none">
+                  {totalCount}
+                </span>
+              )}
             </Link>
           </div>
         </div>
