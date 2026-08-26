@@ -1,4 +1,4 @@
-import { DatabaseSync } from 'node:sqlite';
+import Database from 'better-sqlite3';
 import path from 'node:path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -8,7 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, '..', 'data');
 fs.mkdirSync(DATA_DIR, { recursive: true });
 
-export const db = new DatabaseSync(path.join(DATA_DIR, 'arena.db'));
+export const db = new Database(path.join(DATA_DIR, 'arena.db'));
 
 db.exec(`
   CREATE TABLE IF NOT EXISTS products (
@@ -121,8 +121,7 @@ export const decrementStock = (items) => {
     checks.push({ id: p.id, sizeKey, qty: item.quantity });
   }
 
-  db.exec('BEGIN');
-  try {
+  const decrement = db.transaction(() => {
     for (const { id, sizeKey, qty } of checks) {
       const p = getProductById(id);
       const newStock = { ...p.stock, [sizeKey]: p.stock[sizeKey] - qty };
@@ -130,11 +129,13 @@ export const decrementStock = (items) => {
       db.prepare(`UPDATE products SET stock=?, inStock=?, stockCount=?, updatedAt=datetime('now') WHERE id=?`)
         .run(JSON.stringify(newStock), total > 0 ? 1 : 0, total, id);
     }
-    db.exec('COMMIT');
+  });
+
+  try {
+    decrement();
     return { ok: true };
   } catch (err) {
-    db.exec('ROLLBACK');
-    throw err;
+    return { ok: false, error: 'Failed to update stock.' };
   }
 };
 
