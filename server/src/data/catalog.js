@@ -3,18 +3,18 @@ export const PRODUCTS = [
   {
     id: '001',
     sku: 'JNS-SLM01',
-    name: "Levi's 512 Slim Taper Fit Jean",
+    name: 'SLIM TAPER DARK INDIGO',
     category: 'jeans',
     subcategory: 'Slim Fit',
     price: 7800,
     fit: 'Slim Through Thigh / Tapered Leg',
-    color: 'Rinsed Indigo',
+    color: 'Dark Indigo',
     sizes: [30, 32, 34, 36, 38, 40, 42],
     inStock: true,
     stockCount: 22,
     images: [
-      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1582552938357-32b906df40cb?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80'
     ],
     material: '99% Cotton, 1% Elastane Denim',
     details: [
@@ -24,66 +24,66 @@ export const PRODUCTS = [
       'Reinforced stitching at stress points'
     ],
     care: 'Machine wash cold inside-out. Line dry.',
-    tags: ['jeans', 'slim', 'taper', 'denim', 'levis'],
+    tags: ['jeans', 'slim', 'taper', 'denim'],
   },
   {
     id: '002',
     sku: 'JNS-STR02',
-    name: "Levi's 501 Original Straight Leg Jean",
+    name: 'STRAIGHT LEG RAW SELVEDGE',
     category: 'jeans',
     subcategory: 'Straight Fit',
     price: 8200,
     fit: 'Straight Leg / Mid Rise',
-    color: 'Rigid Raw Indigo',
+    color: 'Raw Indigo',
     sizes: [30, 32, 34, 36, 38, 40, 42],
     inStock: true,
     stockCount: 18,
     images: [
-      'https://images.unsplash.com/photo-1582552938357-32b906df40cb?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton Selvedge Denim',
     details: [
-      'The original 501 straight cut, unchanged since 1890',
+      'Classic straight cut with timeless silhouette',
       'Rigid raw denim that fades uniquely with wear',
       'Button fly with copper rivets and branded patch',
       'Mid rise with a straight leg that works with any shoe'
     ],
     care: 'Wash sparingly in cold water to preserve indigo. Hang dry.',
-    tags: ['jeans', 'straight', 'denim', 'levis', 'classic'],
+    tags: ['jeans', 'straight', 'denim', 'selvedge'],
   },
   {
     id: '003',
     sku: 'JNS-BGY03',
-    name: 'Diesel D-Struct Baggy Carpenter Jean',
+    name: 'BAGGY CARPENTER VINTAGE WASH',
     category: 'jeans',
     subcategory: 'Baggy Fit',
     price: 8900,
     fit: 'Relaxed Baggy / Low Rise',
-    color: 'Dark Vintage Wash',
+    color: 'Vintage Blue',
     sizes: [30, 32, 34, 36, 38, 40, 42],
     inStock: true,
     stockCount: 14,
     images: [
-      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1604176354204-9268737828e4?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Heavyweight Cotton Denim',
     details: [
       'Oversized baggy silhouette with dropped crotch attitude',
       'Utility carpenter pockets and hammer loop',
       'Heavy 13.5oz cotton with vintage enzyme wash',
-      'Tapered ankle so the baggy fits still works with sneakers'
+      'Tapered ankle so the baggy fit still works with sneakers'
     ],
     care: 'Machine wash cold. Tumble dry low.',
-    tags: ['jeans', 'baggy', 'carpenter', 'denim', 'diesel'],
+    tags: ['jeans', 'baggy', 'carpenter', 'denim'],
   },
 
   // ===== T-SHIRTS =====
   {
     id: '004',
     sku: 'TEE-NIK04',
-    name: 'Nike Club Logo Heavyweight Tee',
+    name: 'HEAVYWEIGHT LOGO TEE BLACK',
     category: 'tees',
     subcategory: 'Branded Tees',
     price: 2900,
@@ -93,34 +93,34 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 40,
     images: [
-      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton 220 GSM',
     details: [
-      'Classic Nike Club cotton with embroidered Swoosh',
+      'Classic heavyweight cotton with embroidered logo',
       'Mid-weight 220 GSM jersey that keeps its shape',
       'Ribbed collar that never stretches out',
       'Regular fit true to size'
     ],
     care: 'Machine wash cold, inside out. Do not iron print.',
-    tags: ['tee', 'tshirt', 'nike', 'branded', 'cotton'],
+    tags: ['tee', 'tshirt', 'branded', 'cotton'],
   },
   {
     id: '005',
     sku: 'TEE-PLN05',
-    name: 'Premium Plain Cotton Crew Tee',
+    name: 'PREMIUM PLAIN CREW WHITE',
     category: 'tees',
     subcategory: 'Plain Cotton',
     price: 2200,
     fit: 'Relaxed Boxy Fit',
-    color: 'Chalk White',
+    color: 'White',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     inStock: true,
     stockCount: 55,
     images: [
-      'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Long-Staple Combed Cotton 240 GSM',
     details: [
@@ -137,7 +137,7 @@ export const PRODUCTS = [
   {
     id: '006',
     sku: 'POL-CLS06',
-    name: 'Puma Classic Fit Collar Polo',
+    name: 'CLASSIC POLO NAVY',
     category: 'polos',
     subcategory: 'Classic Polos',
     price: 3400,
@@ -147,8 +147,8 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 26,
     images: [
-      'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Pique Cotton',
     details: [
@@ -158,12 +158,12 @@ export const PRODUCTS = [
       'Fitted shoulders with a clean hem'
     ],
     care: 'Machine wash cold. Hang dry.',
-    tags: ['polo', 'shirt', 'puma', 'pique', 'casual'],
+    tags: ['polo', 'shirt', 'pique', 'casual'],
   },
   {
     id: '007',
     sku: 'POL-PRF07',
-    name: "Lacoste-style Performance Pique Polo",
+    name: 'PERFORMANCE POLO GREEN',
     category: 'polos',
     subcategory: 'Performance Polos',
     price: 4600,
@@ -173,8 +173,8 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 12,
     images: [
-      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800&q=80'
     ],
     material: '78% Cotton, 22% Polyester Pique',
     details: [
@@ -184,25 +184,25 @@ export const PRODUCTS = [
       'Anti-curl collar placket'
     ],
     care: 'Machine wash cold, gentle cycle. Do not bleach.',
-    tags: ['polo', 'performance', 'pique', 'premium', 'golf'],
+    tags: ['polo', 'performance', 'pique', 'premium'],
   },
 
   // ===== SHIRTS =====
   {
     id: '008',
     sku: 'SHR-CSL08',
-    name: 'Casual Check Flannel Shirt',
+    name: 'CHECK FLANNEL RELAXED',
     category: 'shirts',
     subcategory: 'Casual Shirts',
     price: 4800,
     fit: 'Relaxed Fit',
-    color: 'Blue & Red Check',
+    color: 'Blue Red Check',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     inStock: true,
     stockCount: 16,
     images: [
-      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Brushed Cotton Flannel',
     details: [
@@ -217,7 +217,7 @@ export const PRODUCTS = [
   {
     id: '009',
     sku: 'SHR-SMC09',
-    name: 'Ben Sherman Classic Oxford Smart Shirt',
+    name: 'OXFORD SMART SHIRT WHITE',
     category: 'shirts',
     subcategory: 'Smart-Casual Shirts',
     price: 5900,
@@ -227,8 +227,8 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 20,
     images: [
-      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1598032895397-b9472444bf93?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1598032895397-b9472444bf93?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton Oxford Weave',
     details: [
@@ -238,14 +238,14 @@ export const PRODUCTS = [
       'Box pleat back for movement'
     ],
     care: 'Machine wash warm. Iron while damp for crisp finish.',
-    tags: ['shirt', 'oxford', 'smart', 'casual', 'bensherman'],
+    tags: ['shirt', 'oxford', 'smart', 'casual'],
   },
 
   // ===== LAYERING (Hoodies, Sweatshirts, Sweaters) =====
   {
     id: '010',
     sku: 'LYR-HDY10',
-    name: 'Champion Reverse Weave Hoodie',
+    name: 'REVERSE WEAVE HOODIE GREY',
     category: 'layering',
     subcategory: 'Hoodies',
     price: 6200,
@@ -255,23 +255,23 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 30,
     images: [
-      'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1509942774463-acf339cf87d5?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1509942774463-acf339cf87d5?auto=format&fit=crop&w=800&q=80'
     ],
     material: '82% Cotton, 18% Polyester Fleece',
     details: [
-      'Legendary Champion Reverse Weave construction',
+      'Legendary reverse weave construction',
       'Side-seamed to resist shrinking and twisting',
       'Kangaroo pocket with ribbed cuffs and hem',
       'Pre-shrunk heavyweight fleece'
     ],
     care: 'Machine wash cold. Tumble dry low.',
-    tags: ['hoodie', 'champion', 'fleece', 'layering', 'streetwear'],
+    tags: ['hoodie', 'fleece', 'layering', 'streetwear'],
   },
   {
     id: '011',
     sku: 'LYR-CRW11',
-    name: 'Carhartt Midweight Crewneck Sweatshirt',
+    name: 'MIDWEIGHT CREWNECK BROWN',
     category: 'layering',
     subcategory: 'Sweatshirts',
     price: 5600,
@@ -281,8 +281,8 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 24,
     images: [
-      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Cotton-Poly Fleece',
     details: [
@@ -292,12 +292,12 @@ export const PRODUCTS = [
       'Pre-shrunk midweight fleece'
     ],
     care: 'Machine wash cold. Tumble dry low.',
-    tags: ['sweatshirt', 'crewneck', 'carhartt', 'workwear', 'layering'],
+    tags: ['sweatshirt', 'crewneck', 'workwear', 'layering'],
   },
   {
     id: '012',
     sku: 'LYR-SWT12',
-    name: 'Ralph Lauren Style Cable-Knit Sweater',
+    name: 'CABLE KNIT SWEATER OATMEAL',
     category: 'layering',
     subcategory: 'Sweaters & Knitwear',
     price: 8900,
@@ -307,8 +307,8 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 10,
     images: [
-      'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton Cable Knit',
     details: [
@@ -325,7 +325,7 @@ export const PRODUCTS = [
   {
     id: '013',
     sku: 'JKT-DNM13',
-    name: "Levi's Trucker Denim Jacket",
+    name: 'DENIM TRUCKER JACKET WASHED BLUE',
     category: 'jackets',
     subcategory: 'Denim Jackets',
     price: 9800,
@@ -335,8 +335,8 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 12,
     images: [
-      'https://images.unsplash.com/photo-1551537482-f2075a1d41f2?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton Denim',
     details: [
@@ -346,12 +346,12 @@ export const PRODUCTS = [
       'Stone washed for a soft broken-in feel'
     ],
     care: 'Machine wash cold. Line dry.',
-    tags: ['jacket', 'denim', 'trucker', 'levis', 'outerwear'],
+    tags: ['jacket', 'denim', 'trucker', 'outerwear'],
   },
   {
     id: '014',
     sku: 'JKT-BMB14',
-    name: 'Alpha Industries Style MA-1 Bomber Jacket',
+    name: 'MA-1 BOMBER JACKET SAGE',
     category: 'jackets',
     subcategory: 'Bomber Jackets',
     price: 11500,
@@ -361,8 +361,8 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 10,
     images: [
-      'https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Nylon Flight Shell with Satin Lining',
     details: [
@@ -379,7 +379,7 @@ export const PRODUCTS = [
   {
     id: '015',
     sku: 'BOT-CRG15',
-    name: 'Carhartt WIP Cargo Pant',
+    name: 'UTILITY CARGO PANT KHAKI',
     category: 'bottoms',
     subcategory: 'Cargo Pants',
     price: 7200,
@@ -389,8 +389,8 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 18,
     images: [
-      'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Cotton Ripstop',
     details: [
@@ -400,12 +400,12 @@ export const PRODUCTS = [
       'Relaxed straight cut'
     ],
     care: 'Machine wash cold. Tumble dry low.',
-    tags: ['cargo', 'pants', 'carhartt', 'utility', 'bottoms'],
+    tags: ['cargo', 'pants', 'utility', 'bottoms'],
   },
   {
     id: '016',
     sku: 'BOT-JGR16',
-    name: 'Nike Tech Fleece Joggers',
+    name: 'TECH FLEECE JOGGER CHARCOAL',
     category: 'bottoms',
     subcategory: 'Joggers',
     price: 6500,
@@ -415,23 +415,23 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 28,
     images: [
-      'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80'
     ],
-    material: 'Nike Tech Fleece',
+    material: 'Tech Fleece',
     details: [
-      'Premium Tech Fleece with a clean tapered cut',
+      'Premium tech fleece with a clean tapered cut',
       'Zip pockets and discreet side pockets',
       'Ribbed ankle cuffs',
       'Streamlined look that pairs with any sneaker'
     ],
     care: 'Machine wash cold. Do not iron.',
-    tags: ['joggers', 'sweatpants', 'nike', 'tech fleece', 'bottoms'],
+    tags: ['joggers', 'sweatpants', 'tech fleece', 'bottoms'],
   },
   {
     id: '017',
     sku: 'BOT-CHN17',
-    name: 'Dockers Signature Chino',
+    name: 'TAILORED CHINO SAND',
     category: 'bottoms',
     subcategory: 'Chinos',
     price: 5900,
@@ -441,8 +441,8 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 22,
     images: [
-      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80'
     ],
     material: '98% Cotton, 2% Elastane Twill',
     details: [
@@ -452,14 +452,14 @@ export const PRODUCTS = [
       'Pairs with shirts, polos, and light jackets'
     ],
     care: 'Machine wash cold. Line dry or tumble low.',
-    tags: ['chinos', 'trousers', 'dockers', 'smart casual', 'bottoms'],
+    tags: ['chinos', 'trousers', 'smart casual', 'bottoms'],
   },
 
   // ===== FOOTWEAR =====
   {
     id: '018',
     sku: 'SHO-NIK18',
-    name: 'Nike Air Max 90 Premium',
+    name: 'AIR MAX 90 TRIPLE WHITE',
     category: 'footwear',
     subcategory: 'Sneakers',
     price: 11800,
@@ -469,8 +469,8 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 16,
     images: [
-      'https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Leather, Mesh, Visible Air Unit',
     details: [
@@ -485,7 +485,7 @@ export const PRODUCTS = [
   {
     id: '019',
     sku: 'SHO-ASC19',
-    name: 'Asics Gel-Kayano 14 Runner',
+    name: 'GEL-KAYANO 14 CREAM BLACK',
     category: 'footwear',
     subcategory: 'Sneakers',
     price: 13200,
@@ -495,8 +495,8 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 10,
     images: [
-      'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Mesh Upper, Gel Cushioning, Rubber Outsole',
     details: [
@@ -511,7 +511,7 @@ export const PRODUCTS = [
   {
     id: '020',
     sku: 'SHO-NB520',
-    name: 'New Balance 550 Casual Sneaker',
+    name: '550 RETRO WHITE GREY',
     category: 'footwear',
     subcategory: 'Casual Sneakers',
     price: 10900,
@@ -521,8 +521,8 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 14,
     images: [
-      'https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Leather Upper, Rubber Cupsole',
     details: [
@@ -539,7 +539,7 @@ export const PRODUCTS = [
   {
     id: '021',
     sku: 'ACC-CAP21',
-    name: 'New Era 9FIFTY Snapback Cap',
+    name: 'SNAPBACK CAP BLACK',
     category: 'accessories',
     subcategory: 'Caps',
     price: 2900,
@@ -549,23 +549,23 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 35,
     images: [
-      'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Cotton Twill',
     details: [
-      'Classic 9FIFTY snapback with flat brim',
+      'Classic snapback with flat brim',
       'Embroidered front branding',
       'Adjustable snap closure for a perfect fit',
       'Structured crown keeps its shape'
     ],
     care: 'Spot clean with damp cloth. Do not machine wash.',
-    tags: ['cap', 'hat', 'newera', 'snapback', 'accessories'],
+    tags: ['cap', 'hat', 'snapback', 'accessories'],
   },
   {
     id: '022',
     sku: 'ACC-BLT22',
-    name: "Levi's Leather Logo Belt",
+    name: 'LEATHER BELT DARK BROWN',
     category: 'accessories',
     subcategory: 'Belts',
     price: 3900,
@@ -575,8 +575,8 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 20,
     images: [
-      'https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Full-Grain Leather',
     details: [
@@ -586,12 +586,12 @@ export const PRODUCTS = [
       'Stitched edges for durability'
     ],
     care: 'Wipe with a damp cloth. Condition leather periodically.',
-    tags: ['belt', 'leather', 'levis', 'accessories', 'leather'],
+    tags: ['belt', 'leather', 'accessories'],
   },
   {
     id: '023',
     sku: 'ACC-BAG23',
-    name: 'Carhartt Canvas Work Tote Bag',
+    name: 'CANVAS TOTE BAG BROWN',
     category: 'accessories',
     subcategory: 'Bags',
     price: 5200,
@@ -601,8 +601,8 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 15,
     images: [
-      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Duck Canvas',
     details: [
@@ -612,7 +612,7 @@ export const PRODUCTS = [
       'Structured base holds its shape'
     ],
     care: 'Spot clean. Do not machine wash.',
-    tags: ['bag', 'tote', 'carhartt', 'canvas', 'accessories'],
+    tags: ['bag', 'tote', 'canvas', 'accessories'],
   }
 ];
 
