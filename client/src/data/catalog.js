@@ -65,7 +65,7 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 14,
     images: [
-      'https://images.unsplash.com/photo-1604176354204-9268737828e4?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1582552938357-32b906df40cb?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Heavyweight Cotton Denim',
