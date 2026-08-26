@@ -248,6 +248,26 @@ export function Navbar() {
             </div>
           </div>
 
+          {/* Mobile Theme Toggle Row */}
+          <div className="flex items-center justify-between pb-3 border-b border-milano-100 dark:border-milano-800">
+            <span className="text-xs font-bold text-milano-500 uppercase tracking-wider flex items-center gap-1.5">
+              {isDark ? <Sun className="w-3.5 h-3.5" /> : <Moon className="w-3.5 h-3.5" />}
+              <span>Theme / Thème</span>
+            </span>
+            <button
+              type="button"
+              onClick={toggleTheme}
+              className={`relative w-12 h-6 rounded-full transition-colors ${
+                isDark ? 'bg-milano-900 dark:bg-white' : 'bg-milano-300'
+              }`}
+              aria-label="Toggle dark mode"
+            >
+              <span className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white dark:bg-milano-900 shadow transition-transform ${
+                isDark ? 'translate-x-6' : 'translate-x-0'
+              }`} />
+            </button>
+          </div>
+
           <div className="space-y-3 text-sm font-bold uppercase tracking-wider">
             <Link
               to="/shop"
