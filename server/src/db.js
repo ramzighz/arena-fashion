@@ -36,6 +36,7 @@ db.exec(`
     id TEXT PRIMARY KEY,
     sku TEXT DEFAULT '',
     name TEXT NOT NULL,
+    nameFr TEXT DEFAULT '',
     category TEXT NOT NULL,
     subcategory TEXT DEFAULT '',
     price INTEGER NOT NULL,
@@ -62,6 +63,12 @@ try {
   // column already exists
 }
 
+try {
+  db.exec(`ALTER TABLE products ADD COLUMN nameFr TEXT DEFAULT ''`);
+} catch {
+  // column already exists
+}
+
 // Backfill: legacy rows get per-size stock = their old single stockCount
 const legacyRows = db.prepare(`SELECT id, sizes, stock, stockCount FROM products WHERE stock IS NULL OR stock = '{}' OR stock = ''`).all();
 for (const row of legacyRows) {
@@ -77,6 +84,7 @@ const rowToProduct = (row) => {
     id: row.id,
     sku: row.sku,
     name: row.name,
+    nameFr: row.nameFr || '',
     category: row.category,
     subcategory: row.subcategory,
     price: row.price,
@@ -103,10 +111,10 @@ export const getProductById = (id) => {
 
 export const insertProduct = (p) => {
   db.prepare(`
-    INSERT INTO products (id, sku, name, category, subcategory, price, fit, color, sizes, stock, inStock, stockCount, images, material, details, care, tags)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    INSERT INTO products (id, sku, name, nameFr, category, subcategory, price, fit, color, sizes, stock, inStock, stockCount, images, material, details, care, tags)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `).run(
-    p.id, p.sku, p.name, p.category, p.subcategory, p.price, p.fit, p.color,
+    p.id, p.sku, p.name, p.nameFr || '', p.category, p.subcategory, p.price, p.fit, p.color,
     JSON.stringify(p.sizes), JSON.stringify(p.stock), p.inStock ? 1 : 0, p.stockCount,
     JSON.stringify(p.images), p.material, JSON.stringify(p.details), p.care, JSON.stringify(p.tags)
   );
@@ -114,10 +122,10 @@ export const insertProduct = (p) => {
 
 export const updateProductRow = (p) => {
   db.prepare(`
-    UPDATE products SET sku=?, name=?, category=?, subcategory=?, price=?, fit=?, color=?, sizes=?, stock=?, inStock=?, stockCount=?, images=?, material=?, details=?, care=?, tags=?, updatedAt=datetime('now')
+    UPDATE products SET sku=?, name=?, nameFr=?, category=?, subcategory=?, price=?, fit=?, color=?, sizes=?, stock=?, inStock=?, stockCount=?, images=?, material=?, details=?, care=?, tags=?, updatedAt=datetime('now')
     WHERE id=?
   `).run(
-    p.sku, p.name, p.category, p.subcategory, p.price, p.fit, p.color,
+    p.sku, p.name, p.nameFr || '', p.category, p.subcategory, p.price, p.fit, p.color,
     JSON.stringify(p.sizes), JSON.stringify(p.stock), p.inStock ? 1 : 0, p.stockCount,
     JSON.stringify(p.images), p.material, JSON.stringify(p.details), p.care, JSON.stringify(p.tags),
     p.id
