@@ -613,18 +613,520 @@ export const PRODUCTS = [
     ],
     care: 'Spot clean. Do not machine wash.',
     tags: ['bag', 'tote', 'canvas', 'accessories'],
+  },
+
+  // ===== STREETWEAR COLLECTION =====
+  // ===== OVERSIZED TEES =====
+  {
+    id: '024',
+    sku: 'OTEE-GL01',
+    name: 'GRAPHIC LOGO OVERSIZED TEE BLACK',
+    category: 'oversized-tees',
+    subcategory: 'Oversized Tees',
+    price: 3200,
+    fit: 'Oversized Drop Shoulder',
+    color: 'Black',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    inStock: true,
+    stockCount: 35,
+    images: [
+      'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: '100% Cotton 260 GSM',
+    details: [
+      'Heavyweight oversized fit with dropped shoulders',
+      'Bold graphic print on front and back',
+      'Ribbed collar that holds its shape',
+      'Extra long body for streetwear styling'
+    ],
+    care: 'Machine wash cold inside out. Do not iron print.',
+    tags: ['oversized', 'tee', 'graphic', 'streetwear'],
+  },
+  {
+    id: '025',
+    sku: 'OTEE-BW02',
+    name: 'BOLD TEXT OVERSIZED TEE WHITE',
+    category: 'oversized-tees',
+    subcategory: 'Oversized Tees',
+    price: 3200,
+    fit: 'Oversized Drop Shoulder',
+    color: 'White',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    inStock: true,
+    stockCount: 30,
+    images: [
+      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: '100% Cotton 260 GSM',
+    details: [
+      'Clean white oversized tee with bold text',
+      'Premium heavyweight cotton',
+      'Drop shoulder for relaxed fit',
+      'Perfect for layering or standalone'
+    ],
+    care: 'Machine wash cold inside out. Line dry.',
+    tags: ['oversized', 'tee', 'streetwear', 'white'],
+  },
+
+  // ===== ULTRA BAGGY JEANS =====
+  {
+    id: '026',
+    sku: 'UBGY-DB01',
+    name: 'ULTRA BAGGY DOUBLE KNEE BLACK',
+    category: 'ultra-baggy',
+    subcategory: 'Ultra Baggy',
+    price: 9500,
+    fit: 'Ultra Relaxed / Extra Wide Leg',
+    color: 'Washed Black',
+    sizes: [30, 32, 34, 36, 38, 40],
+    inStock: true,
+    stockCount: 12,
+    images: [
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: '100% Heavyweight Cotton Denim 14oz',
+    details: [
+      'Extra wide leg silhouette for maximum bag',
+      'Double knee reinforcement panels',
+      'Vintage enzyme wash for broken-in feel',
+      'Multiple utility pockets'
+    ],
+    care: 'Machine wash cold. Hang dry.',
+    tags: ['ultra', 'baggy', 'jeans', 'denim', 'streetwear'],
+  },
+  {
+    id: '027',
+    sku: 'UBGY-VB02',
+    name: 'ULTRA BAGGY VINTAGE BLUE WASH',
+    category: 'ultra-baggy',
+    subcategory: 'Ultra Baggy',
+    price: 9500,
+    fit: 'Ultra Relaxed / Extra Wide Leg',
+    color: 'Vintage Blue',
+    sizes: [30, 32, 34, 36, 38, 40],
+    inStock: true,
+    stockCount: 10,
+    images: [
+      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: '100% Heavyweight Cotton Denim 14oz',
+    details: [
+      'Classic blue vintage wash',
+      'Ultra wide leg for maximum streetwear vibes',
+      'Pre-washed for soft hand feel',
+      'Tapered ankle for sneaker compatibility'
+    ],
+    care: 'Machine wash cold. Line dry.',
+    tags: ['ultra', 'baggy', 'jeans', 'denim', 'vintage'],
+  },
+
+  // ===== HOODIES OVERSIZE =====
+  {
+    id: '028',
+    sku: 'OHDY-LG01',
+    name: 'OVERSIZED LOGO HOODIE CHARCOAL',
+    category: 'hoodies-oversize',
+    subcategory: 'Hoodies Oversize',
+    price: 6800,
+    fit: 'Oversized / Drop Shoulder',
+    color: 'Charcoal',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    inStock: true,
+    stockCount: 25,
+    images: [
+      'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1509942774463-acf339cf87d5?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: '80% Cotton, 20% Polyester Fleece 380 GSM',
+    details: [
+      'Heavyweight fleece with oversized fit',
+      'Bold logo embroidery on chest',
+      'Kangaroo pocket with hidden media port',
+      'Ribbed cuffs and hem'
+    ],
+    care: 'Machine wash cold. Tumble dry low.',
+    tags: ['hoodie', 'oversized', 'streetwear', 'fleece'],
+  },
+  {
+    id: '029',
+    sku: 'OHDY-WN02',
+    name: 'OVERSIZED WORDMARK HOODIE BLACK',
+    category: 'hoodies-oversize',
+    subcategory: 'Hoodies Oversize',
+    price: 7200,
+    fit: 'Oversized / Drop Shoulder',
+    color: 'Black',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    inStock: true,
+    stockCount: 20,
+    images: [
+      'https://images.unsplash.com/photo-1509942774463-acf339cf87d5?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: '80% Cotton, 20% Polyester Fleece 400 GSM',
+    details: [
+      'Premium heavyweight fleece',
+      'Large wordmark print across chest',
+      'Oversized fit with dropped shoulders',
+      'Double-lined hood'
+    ],
+    care: 'Machine wash cold inside out. Do not iron print.',
+    tags: ['hoodie', 'oversized', 'streetwear', 'black'],
+  },
+
+  // ===== JOGGERS =====
+  {
+    id: '030',
+    sku: 'JGR-TC01',
+    name: 'TECH FLEECE JOGGER BLACK',
+    category: 'joggers',
+    subcategory: 'Jogger & Jogging',
+    price: 5800,
+    fit: 'Tapered Slim',
+    color: 'Black',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    inStock: true,
+    stockCount: 30,
+    images: [
+      'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: 'Tech Fleece',
+    details: [
+      'Clean tapered tech fleece jogger',
+      'Zip pockets for security',
+      'Ribbed ankle cuffs',
+      'Perfect pairing with oversized tees'
+    ],
+    care: 'Machine wash cold. Do not iron.',
+    tags: ['jogger', 'tech', 'fleece', 'streetwear'],
+  },
+  {
+    id: '031',
+    sku: 'JGR-EL02',
+    name: 'ELASTIC WAIST JOGGER GREY',
+    category: 'joggers',
+    subcategory: 'Jogger & Jogging',
+    price: 4500,
+    fit: 'Relaxed Tapered',
+    color: 'Heather Grey',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    inStock: true,
+    stockCount: 35,
+    images: [
+      'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: 'Cotton Loopback Fleece',
+    details: [
+      'Comfortable cotton fleece jogger',
+      'Elastic waist with drawcord',
+      'Kangaroo pocket',
+      'Tapered leg with ribbed cuffs'
+    ],
+    care: 'Machine wash cold. Tumble dry low.',
+    tags: ['jogger', 'cotton', 'fleece', 'casual'],
+  },
+
+  // ===== JERSEYS =====
+  {
+    id: '032',
+    sku: 'JRSY-AM01',
+    name: 'AMERICAN FOOTBALL JERSEY NAVY',
+    category: 'jerseys',
+    subcategory: 'Jersey',
+    price: 4800,
+    fit: 'Oversized',
+    color: 'Navy',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    inStock: true,
+    stockCount: 15,
+    images: [
+      'https://images.unsplash.com/photo-1580087256394-dc596e1c8f4f?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: 'Mesh Polyester',
+    details: [
+      'Classic American football jersey design',
+      'Breathable mesh construction',
+      'Number and letter embroidery',
+      'Oversized fit for streetwear styling'
+    ],
+    care: 'Machine wash cold. Hang dry.',
+    tags: ['jersey', 'football', 'oversized', 'streetwear'],
+  },
+
+  // ===== OLD MONEY SHIRTS =====
+  {
+    id: '033',
+    sku: 'OMSH-LS01',
+    name: 'OLD MONEY STRIPED SHIRT BLUE',
+    category: 'old-money',
+    subcategory: 'Old Money Shirts',
+    price: 5200,
+    fit: 'Regular Classic',
+    color: 'Blue Stripe',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    inStock: true,
+    stockCount: 18,
+    images: [
+      'https://images.unsplash.com/photo-1598032895397-b9472444bf93?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: '100% Cotton Poplin',
+    details: [
+      'Classic vertical stripe pattern',
+      'Button-down collar',
+      'Premium cotton poplin fabric',
+      'Perfect for smart-casual outfits'
+    ],
+    care: 'Machine wash cold. Iron while damp.',
+    tags: ['old', 'money', 'shirt', 'stripe', 'classic'],
+  },
+  {
+    id: '034',
+    sku: 'OMSH-PL02',
+    name: 'OLD MONEY POLO SHIRT CREAM',
+    category: 'old-money',
+    subcategory: 'Old Money Shirts',
+    price: 4200,
+    fit: 'Regular Classic',
+    color: 'Cream',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    inStock: true,
+    stockCount: 22,
+    images: [
+      'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: '100% Pique Cotton',
+    details: [
+      'Clean cream polo for old money aesthetic',
+      'Classic pique knit',
+      'Embroidered logo',
+      'Regular fit with structured collar'
+    ],
+    care: 'Machine wash cold. Hang dry.',
+    tags: ['old', 'money', 'polo', 'classic', 'cream'],
+  },
+
+  // ===== PANTALON =====
+  {
+    id: '035',
+    sku: 'PNT-FL01',
+    name: 'FLARED JEAN WASHED BLUE',
+    category: 'pantalon',
+    subcategory: 'Pantalon',
+    price: 8500,
+    fit: 'Flared / Wide Leg',
+    color: 'Washed Blue',
+    sizes: [30, 32, 34, 36, 38, 40],
+    inStock: true,
+    stockCount: 12,
+    images: [
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: '100% Cotton Denim',
+    details: [
+      'Classic flared silhouette',
+      'Fitted through thigh, flares at knee',
+      'Vintage wash for retro vibe',
+      'Perfect with boots or chunky sneakers'
+    ],
+    care: 'Machine wash cold. Line dry.',
+    tags: ['flared', 'jeans', 'denim', 'retro'],
+  },
+  {
+    id: '036',
+    sku: 'PNT-BF02',
+    name: 'BOYFRIEND STRAIGHT JEAN LIGHT',
+    category: 'pantalon',
+    subcategory: 'Pantalon',
+    price: 7800,
+    fit: 'Relaxed Straight',
+    color: 'Light Blue',
+    sizes: [30, 32, 34, 36, 38, 40],
+    inStock: true,
+    stockCount: 16,
+    images: [
+      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: '100% Cotton Denim',
+    details: [
+      'Relaxed boyfriend straight fit',
+      'Light wash for casual vibes',
+      'Comfortable rise',
+      'Versatile styling options'
+    ],
+    care: 'Machine wash cold. Line dry.',
+    tags: ['boyfriend', 'jeans', 'denim', 'straight'],
+  },
+
+  // ===== SHORTS =====
+  {
+    id: '037',
+    sku: 'SHRT-DN01',
+    name: 'DENIM SHORT WASHED BLUE',
+    category: 'shorts',
+    subcategory: 'Short',
+    price: 4200,
+    fit: 'Relaxed',
+    color: 'Washed Blue',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    inStock: true,
+    stockCount: 25,
+    images: [
+      'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1565084888279-aca5ecc8f8e5?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: '100% Cotton Denim',
+    details: [
+      'Classic denim short for summer',
+      'Relaxed fit for comfort',
+      'Vintage wash finish',
+      'Perfect for hot days'
+    ],
+    care: 'Machine wash cold. Line dry.',
+    tags: ['short', 'denim', 'summer', 'casual'],
+  },
+  {
+    id: '038',
+    sku: 'SHRT-JG02',
+    name: 'JOGGER SHORT FRENCH TERRY BLACK',
+    category: 'shorts',
+    subcategory: 'Short',
+    price: 3500,
+    fit: 'Relaxed',
+    color: 'Black',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    inStock: true,
+    stockCount: 30,
+    images: [
+      'https://images.unsplash.com/photo-1565084888279-aca5ecc8f8e5?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: 'French Terry Cotton',
+    details: [
+      'Comfortable french terry fabric',
+      'Elastic waist with drawcord',
+      'Side pockets',
+      'Perfect for lounging or casual wear'
+    ],
+    care: 'Machine wash cold. Tumble dry low.',
+    tags: ['short', 'jogger', 'cotton', 'casual'],
+  },
+
+  // ===== SWEATSHIRTS =====
+  {
+    id: '039',
+    sku: 'SWST-LG01',
+    name: 'LOGO SWEATSHIRT CHECK BLACK WHITE',
+    category: 'sweatshirts',
+    subcategory: 'Sweatshirt',
+    price: 5500,
+    fit: 'Regular',
+    color: 'Black White',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    inStock: true,
+    stockCount: 20,
+    images: [
+      'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: 'Cotton Fleece',
+    details: [
+      'Bold check pattern sweatshirt',
+      'Logo embroidery on chest',
+      'Ribbed cuffs and hem',
+      'Perfect layering piece'
+    ],
+    care: 'Machine wash cold. Tumble dry low.',
+    tags: ['sweatshirt', 'logo', 'check', 'streetwear'],
+  },
+
+  // ===== VESTE (JACKETS) =====
+  {
+    id: '040',
+    sku: 'VST-ZP01',
+    name: 'ZIP UP HOODIE OLIVE',
+    category: 'veste',
+    subcategory: 'Veste',
+    price: 7500,
+    fit: 'Oversized',
+    color: 'Olive',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    inStock: true,
+    stockCount: 14,
+    images: [
+      'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: 'Cotton Polyester Blend',
+    details: [
+      'Oversized zip-up hoodie',
+      'Heavyweight cotton blend',
+      'Kangaroo pockets',
+      'Metal zipper hardware'
+    ],
+    care: 'Machine wash cold. Tumble dry low.',
+    tags: ['veste', 'hoodie', 'zip', 'oversized'],
+  },
+
+  // ===== ENSEMBLE (SETS) =====
+  {
+    id: '041',
+    sku: 'ENS-TS01',
+    name: 'MATCHING SET SHORT SLEEVE BLACK',
+    category: 'ensemble',
+    subcategory: 'Ensemble',
+    price: 8500,
+    fit: 'Relaxed',
+    color: 'Black',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    inStock: true,
+    stockCount: 10,
+    images: [
+      'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80'
+    ],
+    material: 'Cotton Blend',
+    details: [
+      'Coordinating short sleeve shirt and shorts',
+      'Relaxed fit throughout',
+      'Same fabric and color for both pieces',
+      'Perfect summer matching set'
+    ],
+    care: 'Machine wash cold. Line dry.',
+    tags: ['ensemble', 'set', 'matching', 'summer'],
   }
 ];
 
 export const CATEGORIES = [
-  { id: 'all', name: 'All Collection', count: 23 },
+  { id: 'all', name: 'All Collection', count: 41 },
   { id: 'jeans', name: 'Jeans', count: 3 },
   { id: 'tees', name: 'T-Shirts', count: 2 },
+  { id: 'oversized-tees', name: 'Oversized Tees', count: 2 },
+  { id: 'ultra-baggy', name: 'Ultra Baggy', count: 2 },
   { id: 'polos', name: 'Polos', count: 2 },
   { id: 'shirts', name: 'Shirts', count: 2 },
+  { id: 'old-money', name: 'Old Money', count: 2 },
   { id: 'layering', name: 'Hoodies & Knitwear', count: 3 },
+  { id: 'hoodies-oversize', name: 'Hoodies Oversize', count: 2 },
   { id: 'jackets', name: 'Jackets & Outerwear', count: 2 },
+  { id: 'veste', name: 'Veste', count: 1 },
   { id: 'bottoms', name: 'Cargo, Joggers & Chinos', count: 3 },
+  { id: 'joggers', name: 'Jogger & Jogging', count: 2 },
+  { id: 'pantalon', name: 'Pantalon', count: 2 },
+  { id: 'shorts', name: 'Shorts', count: 2 },
+  { id: 'jerseys', name: 'Jersey', count: 1 },
+  { id: 'sweatshirts', name: 'Sweatshirt', count: 1 },
+  { id: 'ensemble', name: 'Ensemble', count: 1 },
   { id: 'footwear', name: 'Sneakers & Footwear', count: 3 },
   { id: 'accessories', name: 'Caps, Belts & Bags', count: 3 }
 ];
