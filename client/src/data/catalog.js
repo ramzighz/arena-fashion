@@ -14,7 +14,8 @@ export const PRODUCTS = [
     stockCount: 22,
     images: [
       'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1555689502-c4b22d76c56f?auto=format&fit=crop&w=800&q=80'
     ],
     material: '99% Cotton, 1% Elastane Denim',
     details: [
@@ -40,7 +41,8 @@ export const PRODUCTS = [
     stockCount: 18,
     images: [
       'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1582552938357-32b906df40cb?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton Selvedge Denim',
     details: [
@@ -66,7 +68,8 @@ export const PRODUCTS = [
     stockCount: 14,
     images: [
       'https://images.unsplash.com/photo-1582552938357-32b906df40cb?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1555689502-c4b22d76c56f?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Heavyweight Cotton Denim',
     details: [
@@ -94,7 +97,8 @@ export const PRODUCTS = [
     stockCount: 40,
     images: [
       'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton 220 GSM',
     details: [
@@ -120,7 +124,8 @@ export const PRODUCTS = [
     stockCount: 55,
     images: [
       'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Long-Staple Combed Cotton 240 GSM',
     details: [
@@ -148,7 +153,8 @@ export const PRODUCTS = [
     stockCount: 26,
     images: [
       'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1598032895397-b9472444bf93?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Pique Cotton',
     details: [
@@ -174,7 +180,8 @@ export const PRODUCTS = [
     stockCount: 12,
     images: [
       'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=800&q=80'
     ],
     material: '78% Cotton, 22% Polyester Pique',
     details: [
@@ -202,7 +209,8 @@ export const PRODUCTS = [
     stockCount: 16,
     images: [
       'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1598032895397-b9472444bf93?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Brushed Cotton Flannel',
     details: [
@@ -228,7 +236,8 @@ export const PRODUCTS = [
     stockCount: 20,
     images: [
       'https://images.unsplash.com/photo-1598032895397-b9472444bf93?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton Oxford Weave',
     details: [
@@ -256,7 +265,8 @@ export const PRODUCTS = [
     stockCount: 30,
     images: [
       'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1509942774463-acf339cf87d5?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1509942774463-acf339cf87d5?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=800&q=80'
     ],
     material: '82% Cotton, 18% Polyester Fleece',
     details: [
@@ -282,7 +292,8 @@ export const PRODUCTS = [
     stockCount: 24,
     images: [
       'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Cotton-Poly Fleece',
     details: [
@@ -308,7 +319,8 @@ export const PRODUCTS = [
     stockCount: 10,
     images: [
       'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton Cable Knit',
     details: [
@@ -336,7 +348,8 @@ export const PRODUCTS = [
     stockCount: 12,
     images: [
       'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton Denim',
     details: [
@@ -362,7 +375,8 @@ export const PRODUCTS = [
     stockCount: 10,
     images: [
       'https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Nylon Flight Shell with Satin Lining',
     details: [
@@ -390,7 +404,8 @@ export const PRODUCTS = [
     stockCount: 18,
     images: [
       'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Cotton Ripstop',
     details: [
@@ -416,7 +431,8 @@ export const PRODUCTS = [
     stockCount: 28,
     images: [
       'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1565084888279-aca5ecc8f8e5?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Tech Fleece',
     details: [
@@ -442,7 +458,8 @@ export const PRODUCTS = [
     stockCount: 22,
     images: [
       'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80'
     ],
     material: '98% Cotton, 2% Elastane Twill',
     details: [
@@ -470,7 +487,8 @@ export const PRODUCTS = [
     stockCount: 16,
     images: [
       'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Leather, Mesh, Visible Air Unit',
     details: [
@@ -496,7 +514,8 @@ export const PRODUCTS = [
     stockCount: 10,
     images: [
       'https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Mesh Upper, Gel Cushioning, Rubber Outsole',
     details: [
@@ -522,7 +541,8 @@ export const PRODUCTS = [
     stockCount: 14,
     images: [
       'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Leather Upper, Rubber Cupsole',
     details: [
@@ -550,7 +570,8 @@ export const PRODUCTS = [
     stockCount: 35,
     images: [
       'https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1588850561264-2373b8691d9f?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Cotton Twill',
     details: [
@@ -576,7 +597,8 @@ export const PRODUCTS = [
     stockCount: 20,
     images: [
       'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Full-Grain Leather',
     details: [
@@ -602,7 +624,8 @@ export const PRODUCTS = [
     stockCount: 15,
     images: [
       'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Duck Canvas',
     details: [
@@ -631,7 +654,8 @@ export const PRODUCTS = [
     stockCount: 35,
     images: [
       'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton 260 GSM',
     details: [
@@ -657,7 +681,8 @@ export const PRODUCTS = [
     stockCount: 30,
     images: [
       'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton 260 GSM',
     details: [
@@ -685,7 +710,8 @@ export const PRODUCTS = [
     stockCount: 12,
     images: [
       'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1582552938357-32b906df40cb?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Heavyweight Cotton Denim 14oz',
     details: [
@@ -711,7 +737,8 @@ export const PRODUCTS = [
     stockCount: 10,
     images: [
       'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1555689502-c4b22d76c56f?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Heavyweight Cotton Denim 14oz',
     details: [
@@ -739,7 +766,8 @@ export const PRODUCTS = [
     stockCount: 25,
     images: [
       'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1509942774463-acf339cf87d5?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1509942774463-acf339cf87d5?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=800&q=80'
     ],
     material: '80% Cotton, 20% Polyester Fleece 380 GSM',
     details: [
@@ -765,7 +793,8 @@ export const PRODUCTS = [
     stockCount: 20,
     images: [
       'https://images.unsplash.com/photo-1509942774463-acf339cf87d5?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=800&q=80'
     ],
     material: '80% Cotton, 20% Polyester Fleece 400 GSM',
     details: [
@@ -793,7 +822,8 @@ export const PRODUCTS = [
     stockCount: 30,
     images: [
       'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1565084888279-aca5ecc8f8e5?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Tech Fleece',
     details: [
@@ -819,7 +849,8 @@ export const PRODUCTS = [
     stockCount: 35,
     images: [
       'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1565084888279-aca5ecc8f8e5?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Cotton Loopback Fleece',
     details: [
@@ -847,7 +878,8 @@ export const PRODUCTS = [
     stockCount: 15,
     images: [
       'https://images.unsplash.com/photo-1580087256394-dc596e1c8f4f?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Mesh Polyester',
     details: [
@@ -875,7 +907,8 @@ export const PRODUCTS = [
     stockCount: 18,
     images: [
       'https://images.unsplash.com/photo-1598032895397-b9472444bf93?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton Poplin',
     details: [
@@ -901,7 +934,8 @@ export const PRODUCTS = [
     stockCount: 22,
     images: [
       'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Pique Cotton',
     details: [
@@ -929,7 +963,8 @@ export const PRODUCTS = [
     stockCount: 12,
     images: [
       'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1582552938357-32b906df40cb?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton Denim',
     details: [
@@ -955,7 +990,8 @@ export const PRODUCTS = [
     stockCount: 16,
     images: [
       'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1555689502-c4b22d76c56f?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton Denim',
     details: [
@@ -983,7 +1019,8 @@ export const PRODUCTS = [
     stockCount: 25,
     images: [
       'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1565084888279-aca5ecc8f8e5?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1565084888279-aca5ecc8f8e5?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton Denim',
     details: [
@@ -1009,7 +1046,8 @@ export const PRODUCTS = [
     stockCount: 30,
     images: [
       'https://images.unsplash.com/photo-1565084888279-aca5ecc8f8e5?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'French Terry Cotton',
     details: [
@@ -1037,7 +1075,8 @@ export const PRODUCTS = [
     stockCount: 20,
     images: [
       'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Cotton Fleece',
     details: [
@@ -1065,7 +1104,8 @@ export const PRODUCTS = [
     stockCount: 14,
     images: [
       'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Cotton Polyester Blend',
     details: [
@@ -1093,7 +1133,8 @@ export const PRODUCTS = [
     stockCount: 10,
     images: [
       'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Cotton Blend',
     details: [
