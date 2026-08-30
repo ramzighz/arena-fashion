@@ -15,7 +15,7 @@ export function Shop() {
   const [sortBy, setSortBy] = useState('featured');
   const [maxPrice, setMaxPrice] = useState(12000);
   const [onlyInStock, setOnlyInStock] = useState(false);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   useEffect(() => {
     fetch('/api/products')
@@ -44,7 +44,8 @@ export function Shop() {
       const q = searchQuery.toLowerCase().trim();
       list = list.filter(
         (p) =>
-          p.name.toLowerCase().includes(q) ||
+                  p.name.toLowerCase().includes(q) ||
+          p.nameFr?.toLowerCase().includes(q) ||
           p.subcategory.toLowerCase().includes(q) ||
           p.material.toLowerCase().includes(q) ||
           p.tags.some((t) => t.toLowerCase().includes(q))
@@ -224,7 +225,7 @@ export function Shop() {
               <div className="relative aspect-square overflow-hidden bg-milano-100 dark:bg-milano-950">
                 <img
                   src={product.images[0]}
-                  alt={product.name}
+                  alt={language === 'fr' ? product.nameFr : product.name}
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                 />
                 {product.badge && (
@@ -243,7 +244,7 @@ export function Shop() {
                     {product.subcategory}
                   </span>
                   <h3 className="font-bold text-xs sm:text-sm text-milano-900 dark:text-white group-hover:underline line-clamp-1">
-                    {product.name}
+                    {language === 'fr' ? product.nameFr : product.name}
                   </h3>
                   <p className="text-[10px] sm:text-xs text-milano-500 dark:text-milano-400 line-clamp-1 mt-0.5 hidden sm:block">
                     {product.fit}

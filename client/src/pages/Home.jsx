@@ -5,7 +5,7 @@ import { useLanguage } from '../context/LanguageContext';
 
 export function Home() {
   const [products, setProducts] = useState([]);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   useEffect(() => {
     fetch('/api/products')
@@ -97,7 +97,7 @@ export function Home() {
               <div className="relative aspect-square overflow-hidden bg-milano-100 dark:bg-milano-950">
                 <img
                   src={product.images[0]}
-                  alt={product.name}
+                  alt={language === 'fr' ? product.nameFr : product.name}
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                 />
                 {product.badge && (
@@ -113,7 +113,7 @@ export function Home() {
                     {product.subcategory}
                   </span>
                   <h3 className="font-bold text-xs sm:text-sm text-milano-900 dark:text-white group-hover:underline line-clamp-1">
-                    {product.name}
+                    {language === 'fr' ? product.nameFr : product.name}
                   </h3>
                   <p className="text-[10px] sm:text-xs text-milano-500 dark:text-milano-400 line-clamp-1 mt-0.5 hidden sm:block">
                     {product.fit}

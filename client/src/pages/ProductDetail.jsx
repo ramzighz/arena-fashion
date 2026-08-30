@@ -7,7 +7,7 @@ import { useLanguage } from '../context/LanguageContext';
 export function ProductDetail() {
   const { id } = useParams();
   const { addToCart } = useCart();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const [product, setProduct] = useState(null);
   const [notFound, setNotFound] = useState(false);
@@ -91,7 +91,7 @@ export function ProductDetail() {
           {product.category}
         </Link>
         <ChevronRight className="w-3.5 h-3.5" />
-        <span className="text-milano-900 dark:text-white font-bold truncate max-w-xs">{product.name}</span>
+        <span className="text-milano-900 dark:text-white font-bold truncate max-w-xs">{language === 'fr' ? product.nameFr : product.name}</span>
       </nav>
 
       {/* Main Product Layout */}
@@ -102,7 +102,7 @@ export function ProductDetail() {
           <div className="aspect-square rounded-2xl overflow-hidden bg-milano-100 dark:bg-milano-950 border border-milano-200 dark:border-milano-800">
             <img
               src={product.images[selectedImage]}
-              alt={`${product.name} - detailed view`}
+              alt={`${language === 'fr' ? product.nameFr : product.name} - detailed view`}
               className="w-full h-full object-cover object-center"
             />
           </div>
@@ -136,7 +136,7 @@ export function ProductDetail() {
             </span>
 
             <h1 className="text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-milano-900 dark:text-white">
-              {product.name}
+              {language === 'fr' ? product.nameFr : product.name}
             </h1>
 
             <div className="flex items-baseline gap-3 pt-2">
@@ -217,7 +217,7 @@ export function ProductDetail() {
               <div className="p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950 border border-emerald-300 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs font-semibold flex items-center justify-between animate-fade-in">
                 <span className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-emerald-500" />
-                  <span>{t('product.addedToast')} {quantity}x {product.name} ({selectedSize}) {t('product.toBag')}</span>
+                  <span>{t('product.addedToast')} {quantity}x {language === 'fr' ? product.nameFr : product.name} ({selectedSize}) {t('product.toBag')}</span>
                 </span>
                 <Link to="/cart" className="underline font-bold">
                   {t('product.viewBag')}
