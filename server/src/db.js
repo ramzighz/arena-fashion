@@ -1,4 +1,3 @@
-import Database from 'better-sqlite3';
 import path from 'node:path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -8,7 +7,29 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, '..', 'data');
 fs.mkdirSync(DATA_DIR, { recursive: true });
 
-export const db = new Database(path.join(DATA_DIR, 'arena.db'));
+const dbPath = path.join(DATA_DIR, 'arena.db');
+let db;
+
+try {
+  const { default: BetterSqlite3 } = await import('better-sqlite3');
+  db = new BetterSqlite3(dbPath);
+} catch {
+  const { DatabaseSync } = await import('node:sqlite');
+  const sync = new DatabaseSync(dbPath);
+  db = {
+    exec: (sql) => sync.exec(sql),
+    prepare: (sql) => ({
+      run: (...args) => sync.prepare(sql).run(...args),
+      get: (...args) => sync.prepare(sql).get(...args),
+      all: (...args) => sync.prepare(sql).all(...args),
+    }),
+    transaction: (fn) => {
+      return (...args) => { return fn(...args); };
+    },
+  };
+}
+
+export { db };
 
 db.exec(`
   CREATE TABLE IF NOT EXISTS products (

@@ -432,7 +432,7 @@ export const PRODUCTS = [
     images: [
       'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1565084888279-aca5ecc8f8e5?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Tech Fleece',
     details: [
@@ -823,7 +823,7 @@ export const PRODUCTS = [
     images: [
       'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1565084888279-aca5ecc8f8e5?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Tech Fleece',
     details: [
@@ -850,7 +850,7 @@ export const PRODUCTS = [
     images: [
       'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1565084888279-aca5ecc8f8e5?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'Cotton Loopback Fleece',
     details: [
@@ -1019,7 +1019,7 @@ export const PRODUCTS = [
     stockCount: 25,
     images: [
       'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1565084888279-aca5ecc8f8e5?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80'
     ],
     material: '100% Cotton Denim',
@@ -1045,9 +1045,9 @@ export const PRODUCTS = [
     inStock: true,
     stockCount: 30,
     images: [
-      'https://images.unsplash.com/photo-1565084888279-aca5ecc8f8e5?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80'
     ],
     material: 'French Terry Cotton',
     details: [
