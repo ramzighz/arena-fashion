@@ -87,12 +87,12 @@ export function Home() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {featured.map((product) => (
             <Link
               key={product.id}
               to={`/product/${product.id}`}
-              className="group flex flex-col rounded-xl overflow-hidden bg-white dark:bg-milano-900 border border-milano-200 dark:border-milano-800 hover:border-milano-400 dark:hover:border-milano-600 transition-all shadow-sm hover:shadow-md"
+              className="group flex flex-col rounded-lg sm:rounded-xl overflow-hidden bg-white dark:bg-milano-900 border border-milano-200 dark:border-milano-800 hover:border-milano-400 dark:hover:border-milano-600 transition-all shadow-sm hover:shadow-md"
             >
               <div className="relative aspect-square overflow-hidden bg-milano-100 dark:bg-milano-950">
                 <img
@@ -101,31 +101,31 @@ export function Home() {
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                 />
                 {product.badge && (
-                  <span className="absolute top-3 left-3 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded bg-milano-950/80 text-white backdrop-blur-sm">
+                  <span className="absolute top-2 sm:top-3 left-2 sm:left-3 px-1.5 sm:px-2.5 py-0.5 sm:py-1 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider rounded bg-milano-950/80 text-white backdrop-blur-sm">
                     {product.badge}
                   </span>
                 )}
               </div>
 
-              <div className="p-4 flex-1 flex flex-col justify-between space-y-2">
+              <div className="p-2 sm:p-4 flex-1 flex flex-col justify-between space-y-1 sm:space-y-2">
                 <div>
-                  <span className="text-[11px] font-mono uppercase text-milano-500">
+                  <span className="hidden sm:inline text-[10px] sm:text-[11px] font-mono uppercase text-milano-500">
                     {product.subcategory}
                   </span>
-                  <h3 className="font-bold text-sm text-milano-900 dark:text-white group-hover:underline line-clamp-1">
+                  <h3 className="font-bold text-xs sm:text-sm text-milano-900 dark:text-white group-hover:underline line-clamp-1">
                     {product.name}
                   </h3>
-                  <p className="text-xs text-milano-500 dark:text-milano-400 line-clamp-1 mt-0.5">
+                  <p className="text-[10px] sm:text-xs text-milano-500 dark:text-milano-400 line-clamp-1 mt-0.5 hidden sm:block">
                     {product.fit}
                   </p>
                 </div>
 
-                <div className="flex items-center justify-between pt-2 border-t border-milano-100 dark:border-milano-800">
-                  <span className="font-extrabold text-sm text-milano-900 dark:text-white font-mono">
+                <div className="flex items-center justify-between pt-1.5 sm:pt-2 border-t border-milano-100 dark:border-milano-800">
+                  <span className="font-extrabold text-xs sm:text-sm text-milano-900 dark:text-white font-mono">
                     {product.price.toLocaleString()} DZD
                   </span>
-                  <span className="text-xs font-semibold text-milano-600 dark:text-milano-400 group-hover:text-milano-900 dark:group-hover:text-white flex items-center gap-1">
-                    <span>{t('home.inspect')}</span>
+                  <span className="text-[10px] sm:text-xs font-semibold text-milano-600 dark:text-milano-400 group-hover:text-milano-900 dark:group-hover:text-white flex items-center gap-1">
+                    <span className="hidden sm:inline">{t('home.inspect')}</span>
                     <ArrowRight className="w-3 h-3" />
                   </span>
                 </div>

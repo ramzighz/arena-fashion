@@ -80,7 +80,7 @@ export function Shop() {
   };
 
   return (
-    <main id="main-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
+    <main id="main-content" className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 py-6 sm:py-10 space-y-4 sm:space-y-8">
       
       {/* Breadcrumbs */}
       <nav className="flex items-center gap-2 text-xs text-milano-500 font-medium" aria-label="Breadcrumb">
@@ -94,28 +94,28 @@ export function Shop() {
       </nav>
 
       {/* Page Title & Active Summary */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-milano-200 dark:border-milano-800">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-2 sm:gap-4 pb-4 sm:pb-6 border-b border-milano-200 dark:border-milano-800">
         <div>
-          <h1 className="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-milano-900 dark:text-white">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase tracking-tight text-milano-900 dark:text-white">
             {t('shop.catalogTitle')}
           </h1>
-          <p className="text-xs sm:text-sm text-milano-500 mt-1">
+          <p className="text-[10px] sm:text-sm text-milano-500 mt-0.5 sm:mt-1">
             {t('shop.catalogSubtitle')}
           </p>
         </div>
-        <div className="text-xs font-mono text-milano-500">
+        <div className="text-[10px] sm:text-xs font-mono text-milano-500">
           {t('shop.showingCount')} {filteredProducts.length} {t('shop.of')} {products.length} {t('shop.styles')}
         </div>
       </div>
 
       {/* Category Pills Bar */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+      <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-2 scrollbar-none">
         {CATEGORIES.map((cat) => (
           <button
             key={cat.id}
             type="button"
             onClick={() => handleCategoryClick(cat.id)}
-            className={`px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all duration-200 ${
+            className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all duration-200 ${
               selectedCategory === cat.id
                 ? 'bg-milano-950 dark:bg-white text-white dark:text-milano-900 shadow-md ring-2 ring-milano-900 dark:ring-white'
                 : 'bg-milano-100 dark:bg-milano-800 text-milano-700 dark:text-milano-300 hover:bg-milano-200 dark:hover:bg-milano-700 hover:text-milano-900 dark:hover:text-white'
@@ -127,7 +127,7 @@ export function Shop() {
       </div>
 
       {/* Filter and Control Strip */}
-      <div className="p-4 rounded-xl bg-white dark:bg-milano-900 border border-milano-200 dark:border-milano-800 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-center">
+      <div className="p-3 sm:p-4 rounded-lg sm:rounded-xl bg-white dark:bg-milano-900 border border-milano-200 dark:border-milano-800 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 items-center">
         
         {/* Instant Search Input */}
         <div className="relative">
@@ -214,12 +214,12 @@ export function Shop() {
           </button>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
           {filteredProducts.map((product) => (
             <Link
               key={product.id}
               to={`/product/${product.id}`}
-              className="group flex flex-col rounded-xl overflow-hidden bg-white dark:bg-milano-900 border border-milano-200 dark:border-milano-800 hover:border-milano-400 dark:hover:border-milano-600 transition-all shadow-sm hover:shadow-md"
+              className="group flex flex-col rounded-lg sm:rounded-xl overflow-hidden bg-white dark:bg-milano-900 border border-milano-200 dark:border-milano-800 hover:border-milano-400 dark:hover:border-milano-600 transition-all shadow-sm hover:shadow-md"
             >
               <div className="relative aspect-square overflow-hidden bg-milano-100 dark:bg-milano-950">
                 <img
@@ -228,35 +228,35 @@ export function Shop() {
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                 />
                 {product.badge && (
-                  <span className="absolute top-3 left-3 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider rounded bg-milano-950/80 text-white backdrop-blur-sm">
+                  <span className="absolute top-2 sm:top-3 left-2 sm:left-3 px-1.5 sm:px-2 py-0.5 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider rounded bg-milano-950/80 text-white backdrop-blur-sm">
                     {product.badge}
                   </span>
                 )}
-                <span className="absolute bottom-3 right-3 px-2 py-0.5 text-[10px] font-mono rounded bg-white/90 dark:bg-milano-900/90 text-milano-900 dark:text-white backdrop-blur-sm font-semibold">
+                <span className="absolute bottom-2 sm:bottom-3 right-2 sm:right-3 px-1.5 sm:px-2 py-0.5 text-[8px] sm:text-[10px] font-mono rounded bg-white/90 dark:bg-milano-900/90 text-milano-900 dark:text-white backdrop-blur-sm font-semibold">
                   {product.sizes.length} {t('shop.sizesCount')}
                 </span>
               </div>
 
-              <div className="p-4 flex-1 flex flex-col justify-between space-y-2">
+              <div className="p-2 sm:p-4 flex-1 flex flex-col justify-between space-y-1 sm:space-y-2">
                 <div>
-                  <span className="text-[10px] font-mono uppercase tracking-wider text-milano-500">
+                  <span className="hidden sm:inline text-[10px] font-mono uppercase tracking-wider text-milano-500">
                     {product.subcategory}
                   </span>
-                  <h3 className="font-bold text-sm text-milano-900 dark:text-white group-hover:underline line-clamp-1">
+                  <h3 className="font-bold text-xs sm:text-sm text-milano-900 dark:text-white group-hover:underline line-clamp-1">
                     {product.name}
                   </h3>
-                  <p className="text-xs text-milano-500 dark:text-milano-400 line-clamp-1 mt-0.5">
+                  <p className="text-[10px] sm:text-xs text-milano-500 dark:text-milano-400 line-clamp-1 mt-0.5 hidden sm:block">
                     {product.fit}
                   </p>
                 </div>
 
-                <div className="flex items-center justify-between pt-2 border-t border-milano-100 dark:border-milano-800">
+                <div className="flex items-center justify-between pt-1.5 sm:pt-2 border-t border-milano-100 dark:border-milano-800">
                   <div className="flex items-baseline">
-                    <span className="font-extrabold text-sm text-milano-900 dark:text-white font-mono">
+                    <span className="font-extrabold text-xs sm:text-sm text-milano-900 dark:text-white font-mono">
                       {product.price.toLocaleString()} DZD
                     </span>
                   </div>
-                  <span className="text-xs font-semibold text-milano-600 dark:text-milano-400 group-hover:text-milano-900 dark:group-hover:text-white">
+                  <span className="text-[10px] sm:text-xs font-semibold text-milano-600 dark:text-milano-400 group-hover:text-milano-900 dark:group-hover:text-white">
                     {t('shop.viewDetails')}
                   </span>
                 </div>
