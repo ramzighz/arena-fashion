@@ -15,6 +15,7 @@ export function ProductDetail() {
   const [selectedSize, setSelectedSize] = useState('');
   const [quantity, setQuantity] = useState(1);
   const [addedToast, setAddedToast] = useState(false);
+  const [stockError, setStockError] = useState('');
 
   useEffect(() => {
     let cancelled = false;
@@ -61,6 +62,17 @@ export function ProductDetail() {
 
   const handleAdd = () => {
     if (!selectedSize) return;
+    setStockError('');
+    
+    const stock = product.stock?.[selectedSize];
+    if (stock !== undefined && stock < quantity) {
+      setStockError(stock === 0 
+        ? `${selectedSize} is out of stock right now.`
+        : `Only ${stock} left in size ${selectedSize}.`
+      );
+      return;
+    }
+    
     addToCart(product, selectedSize, quantity);
     setAddedToast(true);
     setTimeout(() => setAddedToast(false), 3000);
@@ -151,7 +163,7 @@ export function ProductDetail() {
                     key={size}
                     type="button"
                     disabled={soldOut}
-                    onClick={() => setSelectedSize(size)}
+                    onClick={() => { setSelectedSize(size); setStockError(''); }}
                     className={`py-2.5 px-3 rounded-lg text-xs font-mono font-bold uppercase transition-all ${
                       soldOut
                         ? 'bg-milano-50 dark:bg-milano-950 text-milano-300 dark:text-milano-600 line-through cursor-not-allowed'
@@ -173,7 +185,7 @@ export function ProductDetail() {
               <div className="flex items-center border border-milano-300 dark:border-milano-700 rounded-lg overflow-hidden bg-white dark:bg-milano-900">
                 <button
                   type="button"
-                  onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                  onClick={() => { setQuantity(Math.max(1, quantity - 1)); setStockError(''); }}
                   className="p-3 text-milano-500 hover:text-milano-900 dark:hover:text-white"
                   aria-label={t('product.decreaseQty')}
                 >
@@ -184,7 +196,7 @@ export function ProductDetail() {
                 </span>
                 <button
                   type="button"
-                  onClick={() => setQuantity(quantity + 1)}
+                  onClick={() => { setQuantity(quantity + 1); setStockError(''); }}
                   className="p-3 text-milano-500 hover:text-milano-900 dark:hover:text-white"
                   aria-label={t('product.increaseQty')}
                 >
@@ -212,6 +224,13 @@ export function ProductDetail() {
                 </Link>
               </div>
             )}
+
+            {stockError && (
+              <div className="p-3 rounded-lg bg-red-50 dark:bg-red-950 border border-red-300 dark:border-red-800 text-red-800 dark:text-red-300 text-xs font-semibold flex items-center gap-2 animate-fade-in">
+                <span className="text-red-500">!</span>
+                <span>{stockError}</span>
+              </div>
+            )}
           </div>
 
           {/* Quick Pillars */}
@@ -228,6 +247,14 @@ export function ProductDetail() {
 
         </div>
       </div>
+
+      {/* Stock Error Toast - Mobile */}
+      {stockError && (
+        <div className="lg:hidden fixed bottom-20 left-4 right-4 z-30 p-3 rounded-lg bg-red-50 dark:bg-red-950 border border-red-300 dark:border-red-800 text-red-800 dark:text-red-300 text-xs font-semibold flex items-center gap-2 animate-fade-in shadow-lg">
+          <span className="text-red-500">!</span>
+          <span>{stockError}</span>
+        </div>
+      )}
 
       {/* Sticky Mobile CTA Bar */}
       <div className="lg:hidden fixed bottom-0 left-0 right-0 z-30 p-3 bg-white/95 dark:bg-obsidian/95 backdrop-blur-md border-t border-milano-200 dark:border-milano-800 flex items-center justify-between gap-4">
