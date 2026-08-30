@@ -121,7 +121,7 @@ export function Shop() {
                 : 'bg-milano-100 dark:bg-milano-800 text-milano-700 dark:text-milano-300 hover:bg-milano-200 dark:hover:bg-milano-700 hover:text-milano-900 dark:hover:text-white'
             }`}
           >
-            {cat.name}
+            {t(`categories.${cat.id}`)}
           </button>
         ))}
       </div>

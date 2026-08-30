@@ -87,7 +87,7 @@ export function Navbar() {
                         onClick={() => setShopOpen(false)}
                         className="block px-4 py-2.5 text-xs font-semibold text-milano-700 dark:text-milano-300 hover:bg-milano-100 dark:hover:bg-milano-800 hover:text-milano-900 dark:hover:text-white transition-colors"
                       >
-                        {cat.name}
+                        {t(`categories.${cat.id}`)}
                       </Link>
                     ))}
                   </div>
