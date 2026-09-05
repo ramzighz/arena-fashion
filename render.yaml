@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: your-business
+    name: arena-fashion
     runtime: docker
     dockerfilePath: Dockerfile
     envVars:
@@ -13,7 +13,7 @@ services:
       - key: SELLER_KEY
         generateValue: true
       - key: ADMIN_EMAIL
-        value: admin@yourbusiness.com
+        value: admin@arenafashion.com
       - key: ADMIN_PASSWORD
         generateValue: true
       - key: CLIENT_ORIGIN
