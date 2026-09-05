@@ -62,7 +62,7 @@ router.post('/', requireSeller, validate(ProductSchema), (req, res) => {
     stock,
     stockCount: total,
     inStock: total > 0,
-    id: `arena-${randomBytes(3).toString('hex')}`,
+    id: `item-${randomBytes(3).toString('hex')}`,
   };
   insertProduct(product);
   return res.status(201).json({ success: true, product });

@@ -15,27 +15,26 @@ const getJwtSecret = () => {
 };
 const JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN || '7d';
 
-// In-memory secure users store (with pre-seeded admin and sample user)
+// In-memory secure users store (with pre-seeded admin)
 // Passwords hashed with bcrypt (salt rounds 10)
 const salt = bcrypt.genSaltSync(10);
 const USERS = [
   {
     id: 'usr-admin-01',
-    name: 'Arena Fashion Admin',
-    email: process.env.ADMIN_EMAIL || 'admin@arenafashion.com',
-    passwordHash: bcrypt.hashSync(process.env.ADMIN_PASSWORD || 'ArenaAdmin2026!', salt),
+    name: 'Your Business Name Admin',
+    email: process.env.ADMIN_EMAIL || 'admin@yourbusiness.com',
+    passwordHash: bcrypt.hashSync(process.env.ADMIN_PASSWORD || 'changeme', salt),
     role: 'admin',
     createdAt: '2026-01-01T00:00:00Z',
   },
-  {
-    id: 'usr-demo-02',
-    name: 'Alex Rivera',
-    email: 'alex@example.com',
-    passwordHash: bcrypt.hashSync('ArenaUser2026!', salt),
-    role: 'customer',
-    createdAt: '2026-01-10T12:00:00Z',
-  }
 ];
+
+export const validateAdminConfig = () => {
+  if (!process.env.ADMIN_EMAIL || !process.env.ADMIN_PASSWORD) {
+    console.error('[FATAL] ADMIN_EMAIL and ADMIN_PASSWORD must be set in environment.');
+    process.exit(1);
+  }
+};
 
 // Helper to sign JWT
 const signToken = (user) => {
@@ -84,7 +83,6 @@ router.post('/register', strictLimiter, validate(RegisterSchema), async (req, re
     return res.status(201).json({
       success: true,
       message: 'Account successfully registered.',
-      token,
       user: {
         id: newUser.id,
         name: newUser.name,
@@ -128,8 +126,7 @@ router.post('/login', strictLimiter, validate(LoginSchema), async (req, res) => 
 
     return res.json({
       success: true,
-      message: 'Welcome back to Arena Fashion.',
-      token,
+      message: 'Welcome back to Your Business Name.',
       user: {
         id: user.id,
         name: user.name,

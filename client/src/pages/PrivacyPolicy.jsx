@@ -33,7 +33,7 @@ export function PrivacyPolicy() {
             1. Overview & Data Philosophy
           </h2>
           <p>
-            Arena Fashion ("Arena Fashion", "we", "us", or "our") respects your privacy. We collect only the data essential to fulfill apparel orders, process secure transactions, and manage fitting reservations.
+            Your Business Name ("Your Business Name", "we", "us", or "our") respects your privacy. We collect only the data essential to fulfill orders, process secure transactions, and manage appointments.
           </p>
         </section>
 
@@ -68,7 +68,7 @@ export function PrivacyPolicy() {
             4. Your Rights (GDPR / CCPA)
           </h2>
           <p>
-            Under applicable privacy frameworks, you hold the right to access, rectify, or request deletion of your stored profile information. To submit a data request, contact our privacy officer at <a href="mailto:privacy@arenafashion.com" className="font-bold underline text-milano-900 dark:text-white">privacy@arenafashion.com</a>.
+            Under applicable privacy frameworks, you hold the right to access, rectify, or request deletion of your stored profile information. To submit a data request, contact our privacy officer at <a href="mailto:privacy@yourbusiness.com" className="font-bold underline text-milano-900 dark:text-white">privacy@yourbusiness.com</a>.
           </p>
         </section>
 

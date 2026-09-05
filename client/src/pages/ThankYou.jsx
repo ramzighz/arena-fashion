@@ -13,7 +13,7 @@ export function ThankYou() {
     createdAt: new Date().toISOString(),
     status: 'Confirmed & Processing',
     trackingNumber: '98321455',
-    carrier: 'Arena Fashion Express',
+    carrier: 'Express Delivery',
     estimatedDelivery: '2 to 4 business days',
     subtotal: 14700,
     shipping: 0,
@@ -74,10 +74,10 @@ export function ThankYou() {
               {t('thankYou.invoiceTitle')}
             </span>
             <h2 className="text-xl font-extrabold uppercase text-milano-900 dark:text-white mt-0.5">
-              ARENA FASHION
+              YOUR BUSINESS NAME
             </h2>
             <div className="text-xs text-milano-500 font-mono mt-1">
-              {t('thankYou.orderDate')}: {new Date(order.createdAt).toLocaleDateString()} &bull; Bab Ezzouar, Alger
+              {t('thankYou.orderDate')}: {new Date(order.createdAt).toLocaleDateString()} &bull; Your City, ST
             </div>
           </div>
 

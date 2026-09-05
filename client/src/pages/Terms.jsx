@@ -33,7 +33,7 @@ export function Terms() {
             1. Scope of Agreement
           </h2>
           <p>
-            By accessing or ordering from Arena Fashion (arenafashion.com), you agree to be bound by these Terms and Conditions. Our casual menswear, denim garments, and footwear are sold subject to inventory availability and verified transaction confirmation.
+            By accessing or ordering from Your Business Name (yourbusiness.com), you agree to be bound by these Terms and Conditions. Our products are sold subject to inventory availability and verified transaction confirmation.
           </p>
         </section>
 
@@ -51,7 +51,7 @@ export function Terms() {
             3. Limitation of Liability
           </h2>
           <p>
-            Arena Fashion shall not be liable for indirect, incidental, or consequential damages resulting from product use or delivery delays caused by common carrier disruptions.
+            Your Business Name shall not be liable for indirect, incidental, or consequential damages resulting from product use or delivery delays caused by common carrier disruptions.
           </p>
         </section>
 

@@ -31,7 +31,7 @@ export function CookieBanner() {
         <ShieldCheck className="w-5 h-5 text-milano-900 dark:text-milano-100 shrink-0 mt-0.5" />
         <div className="space-y-2 text-xs text-milano-600 dark:text-milano-300">
           <p>
-            Arena Fashion uses essential cookies for shopping bag persistence and security. No third-party data tracking. Read our{' '}
+            Your Business Name uses essential cookies for shopping bag persistence and security. No third-party data tracking. Read our{' '}
             <Link to="/privacy-policy" className="underline font-medium text-milano-900 dark:text-white">
               Privacy Policy
             </Link>.

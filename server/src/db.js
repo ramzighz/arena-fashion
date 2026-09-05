@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, '..', 'data');
 fs.mkdirSync(DATA_DIR, { recursive: true });
 
-const dbPath = path.join(DATA_DIR, 'arena.db');
+const dbPath = path.join(DATA_DIR, 'store.db');
 let db;
 
 try {
@@ -176,5 +176,5 @@ if (total === 0) {
     for (const s of p.sizes) stock[String(s)] = p.stockCount || 0;
     insertProduct({ ...p, stock, inStock: (p.stockCount || 0) > 0 });
   }
-  console.log(`[Arena Fashion DB] Seeded ${PRODUCTS.length} products into SQLite`);
+  console.log(`[Your Business Name DB] Seeded ${PRODUCTS.length} products into SQLite`);
 }

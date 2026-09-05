@@ -1233,27 +1233,27 @@ export const STYLE_GUIDES = [
 
 export const STORE_LOCATIONS = [
   {
-    id: 'bab-ezzouar-flagship',
-    name: 'ARENA FASHION Flagship Store',
-    tagline: 'Official Menswear & Footwear Atelier',
-    address: 'P5CH+2WP, Boulevard de l\'Université, Bab Ezzouar, Alger',
-    googleMapsUrl: 'https://www.google.com/maps/place/ARENA+Fashion/@36.7201693,3.1796428,20.5z/data=!4m14!1m7!3m6!1s0x128e518d1386423f:0xadf1d053b907d85c!2sP59H%2BXX9,+Bd+de+l%27Universit%C3%A9,+Bab+Ezzouar!3b1!8m2!3d36.7199125!4d3.1799844!3m5!1s0x128e511ce702b63b:0x3e9d6ad1a50113a!8m2!3d36.7200775!4d3.1798196!16s%2Fg%2F11n093gx87?entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D',
-    phone: '0552778744',
-    phoneFormatted: '0552 77 87 44',
-    whatsapp: '+213552778744',
-    email: 'contact@arenafashion.com',
-    hours: 'Samedi – Jeudi: 10h00 – 21h00 | Vendredi: 15h00 – 21h00',
-    transit: 'Tramway Station Cité Universitaire / USTHB, Bab Ezzouar',
+    id: 'flagship-store',
+    name: 'YOUR BUSINESS NAME Flagship Store',
+    tagline: 'Your Tagline Here',
+    address: '123 Main Street, Suite 100, Your City, ST 12345',
+    googleMapsUrl: 'https://www.google.com/maps/place/Your+Business/@0,0,17z',
+    phone: '15551234567',
+    phoneFormatted: '(555) 123-4567',
+    whatsapp: '+15551234567',
+    email: 'contact@yourbusiness.com',
+    hours: 'Mon - Sat: 10:00 AM - 9:00 PM | Sun: 12:00 PM - 6:00 PM',
+    transit: 'Public transit information',
     fittingBookingAvailable: true,
-    coordinates: { lat: 36.7125, lng: 3.1812 },
+    coordinates: { lat: 0, lng: 0 },
     images: [
       {
-        url: '/store/Storefront.png',
-        caption: 'ARENA FASHION Storefront - Boulevard de l\'Université, Bab Ezzouar'
+        url: '',
+        caption: 'YOUR BUSINESS Storefront - Your City'
       },
       {
-        url: '/store/Interior_Racks.png',
-        caption: 'Jeans, T-Shirts & Sneakers Collection'
+        url: '',
+        caption: 'Your Product Collection'
       }
     ]
   }

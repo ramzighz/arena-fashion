@@ -58,7 +58,7 @@ export const helmetConfig = helmet({
       scriptSrc: ["'self'"],
       styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
       fontSrc: ["'self'", 'https://fonts.gstatic.com', 'data:'],
-      imgSrc: ["'self'", 'data:', 'https://images.unsplash.com', 'https://images.pexels.com', 'https:'],
+      imgSrc: ["'self'", 'data:', 'https://images.unsplash.com', 'https://images.pexels.com', 'https://res.cloudinary.com'],
       connectSrc: ["'self'"],
       frameAncestors: ["'none'"],
       objectSrc: ["'none'"],

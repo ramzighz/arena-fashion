@@ -7,12 +7,16 @@ import { fileURLToPath } from 'url';
 import { corsOptions, helmetConfig, globalLimiter, permissionsPolicyMiddleware, httpsRedirectMiddleware } from './config/security.js';
 import { sanitizeMiddleware } from './middleware/validate.js';
 import authRoutes from './routes/auth.js';
+import { validateAdminConfig } from './routes/auth.js';
 import productRoutes from './routes/products.js';
 import orderRoutes from './routes/orders.js';
 import uploadRoutes from './routes/upload.js';
 import { v2 as cloudinary } from 'cloudinary';
 
 dotenv.config({ override: false });
+
+// Validate required env vars after dotenv loads
+validateAdminConfig();
 
 // Cloudinary (product image hosting) - configured via server/.env
 if (process.env.CLOUDINARY_CLOUD_NAME) {
@@ -108,7 +112,7 @@ app.get('/sitemap.xml', (req, res) => {
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'healthy',
-    brand: 'Arena Fashion',
+    brand: 'Your Business Name',
     currency: 'DZD',
     timestamp: new Date().toISOString(),
   });
@@ -131,7 +135,7 @@ app.use(express.static(clientDistPath));
 app.use('/api/*', (req, res) => {
   res.status(404).json({
     success: false,
-    error: `API endpoint '${req.originalUrl}' not found.`,
+    error: 'API endpoint not found.',
   });
 });
 
@@ -157,5 +161,5 @@ app.use((err, req, res, next) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`[Arena Fashion Server] Live on port ${PORT} | Env: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`[Your Business Name Server] Live on port ${PORT} | Env: ${process.env.NODE_ENV || 'development'}`);
 });

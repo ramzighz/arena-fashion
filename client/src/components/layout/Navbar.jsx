@@ -42,18 +42,18 @@ export function Navbar() {
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
 
-            {/* Brand Logo: Geometric SVG Emblem + Wordmark */}
-            <Link to="/" className="flex items-center gap-2 sm:gap-2.5 group" aria-label="Arena Fashion Home">
+            {/* Brand Logo */}
+            <Link to="/" className="flex items-center gap-2 sm:gap-2.5 group" aria-label="Your Business Name Home">
               <svg className="w-6 h-6 sm:w-8 sm:h-8 text-milano-900 dark:text-white transition-transform group-hover:scale-105" viewBox="0 0 32 32" fill="currentColor">
                 <rect width="32" height="32" rx="6" fill="currentColor" fillOpacity="0.08" />
-                <path d="M10 26L16 8L22 26H18L16 20L14 26H10Z" fill="currentColor" />
+                <text x="16" y="22" textAnchor="middle" fill="currentColor" fontSize="16" fontFamily="sans-serif" fontWeight="bold">Y</text>
               </svg>
               <div className="flex flex-col">
                 <span className="font-extrabold text-base sm:text-xl tracking-[0.2em] text-milano-900 dark:text-white leading-none uppercase">
-                  ARENA
+                  YOUR
                 </span>
                 <span className="text-[8px] sm:text-[10px] uppercase tracking-widest text-milano-500 font-semibold mt-0.5">
-                  FASHION
+                  LOGO
                 </span>
               </div>
             </Link>
@@ -124,7 +124,7 @@ export function Navbar() {
 
             {/* Social Links - desktop only */}
             <a
-              href="https://www.instagram.com/arena_babezouar/"
+                href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden lg:block p-2 text-milano-700 dark:text-milano-300 hover:text-milano-900 dark:hover:text-white transition-colors"
@@ -133,7 +133,7 @@ export function Navbar() {
               <Instagram className="w-5 h-5" />
             </a>
             <a
-              href="https://www.facebook.com/arenafashion.bez/"
+                href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden lg:block p-2 text-milano-700 dark:text-milano-300 hover:text-milano-900 dark:hover:text-white transition-colors"
@@ -357,16 +357,16 @@ export function Navbar() {
 
           <div className="pt-4 flex items-center justify-between text-xs text-milano-500">
             <a
-              href="https://wa.me/213552778744"
+              href="https://wa.me/15551234567"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1"
             >
-              WhatsApp: 0552 77 87 44
+              WhatsApp: (555) 123-4567
             </a>
             <div className="flex items-center gap-3">
               <a
-                href="https://www.instagram.com/arena_babezouar/"
+              href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -375,7 +375,7 @@ export function Navbar() {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="https://www.facebook.com/arenafashion.bez/"
+              href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"

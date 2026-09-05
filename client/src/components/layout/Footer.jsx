@@ -18,10 +18,10 @@ export function Footer() {
             <Link to="/" className="flex items-center gap-2.5">
               <svg className="w-7 h-7 text-white" viewBox="0 0 32 32" fill="currentColor">
                 <rect width="32" height="32" rx="6" fill="#1e293b" />
-                <path d="M10 26L16 8L22 26H18L16 20L14 26H10Z" fill="#ffffff" />
+                <text x="16" y="22" textAnchor="middle" fill="#ffffff" fontSize="16" fontFamily="sans-serif" fontWeight="bold">Y</text>
               </svg>
               <span className="font-extrabold text-xl tracking-[0.2em] text-white uppercase">
-                ARENA FASHION
+                YOUR LOGO
               </span>
             </Link>
             <p className="text-xs leading-relaxed text-milano-400 max-w-sm">
@@ -31,24 +31,24 @@ export function Footer() {
               <div className="flex items-center gap-2 text-milano-300">
                 <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
                 <a
-                  href="https://wa.me/213552778744"
+                  href="https://wa.me/15551234567"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-emerald-400 hover:text-emerald-300 font-bold inline-flex items-center gap-1"
                 >
-                  <span className="font-mono">0552 77 87 44</span>
+                  <span className="font-mono">(555) 123-4567</span>
                   <span>&bull; WhatsApp</span>
                 </a>
               </div>
               <div className="flex items-start gap-2 text-milano-300">
                 <MapPin className="w-3.5 h-3.5 text-milano-400 shrink-0 mt-0.5" />
                 <a
-                  href="https://www.google.com/maps/place/ARENA+Fashion/@36.7201693,3.1796428,20.5z/data=!4m14!1m7!3m6!1s0x128e518d1386423f:0xadf1d053b907d85c!2sP59H%2BXX9,+Bd+de+l'Universit%C3%A9,+Bab+Ezzouar!3b1!8m2!3d36.7199125!4d3.1799844!3m5!1s0x128e511ce702b63b:0x3e9d6ad1a50113a!8m2!3d36.7200775!4d3.1798196!16s%2Fg%2F11n093gx87?entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D"
+                  href="https://www.google.com/maps/place/Your+Business/@0,0,17z"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors underline"
                 >
-                  P5CH+2WP, Boulevard de l'Université, Bab Ezzouar, Alger
+                  123 Main Street, Suite 100, Your City, ST 12345
                 </a>
               </div>
             </div>

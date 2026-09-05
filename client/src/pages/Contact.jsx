@@ -36,13 +36,13 @@ export function Contact() {
             For sizing advice, stock availability, order follow-up, and all inquiries — message us directly. Fast replies during store hours.
           </p>
           <a
-            href="https://wa.me/213552778744"
+            href="https://wa.me/15551234567"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white font-extrabold text-sm uppercase tracking-wider transition-colors shadow-lg inline-flex items-center gap-2"
           >
             <MessageCircle className="w-4 h-4" />
-            <span>0552 77 87 44</span>
+            <span>(555) 123-4567</span>
           </a>
         </div>
 
@@ -57,10 +57,10 @@ export function Contact() {
             </div>
             <div>
               <span className="font-bold text-milano-900 dark:text-white block">
-                P5CH+2WP, Boulevard de l'Université, Bab Ezzouar, Alger
+                123 Main Street, Suite 100, Your City, ST 12345
               </span>
               <a
-                href="https://www.google.com/maps/place/ARENA+Fashion/@36.7201693,3.1796428,20.5z/data=!4m14!1m7!3m6!1s0x128e518d1386423f:0xadf1d053b907d85c!2sP59H%2BXX9,+Bd+de+l%27Universit%C3%A9,+Bab+Ezzouar!3b1!8m2!3d36.7199125!4d3.1799844!3m5!1s0x128e511ce702b63b:0x3e9d6ad1a50113a!8m2!3d36.7200775!4d3.1798196!16s%2Fg%2F11n093gx87?entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D"
+                href="https://www.google.com/maps/place/Your+Business/@0,0,17z"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-[11px] font-semibold text-milano-600 dark:text-milano-400 hover:underline mt-1"
@@ -71,7 +71,7 @@ export function Contact() {
             </div>
           </div>
           <a
-            href="https://wa.me/213552778744"
+            href="https://wa.me/15551234567"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-milano-900 dark:bg-white text-white dark:text-milano-900 font-bold text-xs uppercase tracking-wider"

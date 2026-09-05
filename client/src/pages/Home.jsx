@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, MessageCircle } from 'lucide-react';
+import { ArrowRight, MessageCircle, Image } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 export function Home() {
@@ -135,7 +135,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* Physical Store Showcase: ARENA FASHION Bab Ezzouar */}
+      {/* Physical Store Showcase */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="rounded-3xl bg-milano-950 text-white overflow-hidden border border-milano-800 grid grid-cols-1 lg:grid-cols-12 shadow-2xl">
           
@@ -157,27 +157,27 @@ export function Home() {
 
               <div className="space-y-2 text-xs text-milano-300 pt-2 border-t border-milano-800">
                 <div className="font-semibold text-white">
-                  P5CH+2WP, Boulevard de l'Université, Bab Ezzouar, Alger
+                  123 Main Street, Suite 100, Your City, ST 12345
                 </div>
                 <a
-                  href="https://wa.me/213552778744"
+                  href="https://wa.me/15551234567"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 font-semibold text-white hover:text-emerald-300 transition-colors"
                 >
                   <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>0552 77 87 44</span>
-                  <span className="text-milano-400 font-normal">&bull; Appels &amp; WhatsApp</span>
+                  <span>(555) 123-4567</span>
+                  <span className="text-milano-400 font-normal">&bull; Calls &amp; WhatsApp</span>
                 </a>
                 <div className="text-milano-400">
-                  Samedi – Jeudi: 10h00 – 21h00 | Vendredi: 15h00 – 21h00
+                  Mon – Sat: 10:00 AM – 9:00 PM | Sun: 12:00 PM – 6:00 PM
                 </div>
               </div>
             </div>
 
             <div className="flex flex-wrap gap-3 pt-2">
               <a
-                href="https://www.google.com/maps/place/ARENA+Fashion/@36.7201693,3.1796428,20.5z/data=!4m14!1m7!3m6!1s0x128e518d1386423f:0xadf1d053b907d85c!2sP59H%2BXX9,+Bd+de+l%27Universit%C3%A9,+Bab+Ezzouar!3b1!8m2!3d36.7199125!4d3.1799844!3m5!1s0x128e511ce702b63b:0x3e9d6ad1a50113a!8m2!3d36.7200775!4d3.1798196!16s%2Fg%2F11n093gx87?entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D"
+                href="https://www.google.com/maps/place/Your+Business/@0,0,17z"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-5 py-3 rounded-lg bg-white text-milano-950 font-bold text-xs uppercase tracking-wider hover:bg-milano-100 transition-colors"
@@ -195,25 +195,15 @@ export function Home() {
 
           {/* Photos Side */}
           <div className="lg:col-span-7 grid grid-cols-2 gap-2 p-2 bg-milano-900 h-full">
-            <div className="relative min-h-[220px] sm:min-h-[280px] rounded-2xl overflow-hidden group">
-              <img
-                src="/store/Storefront.png"
-                alt="Façade ARENA FASHION Bab Ezzouar"
-                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/80 to-transparent text-[11px] font-bold text-white">
-                {t('home.storeFrontCap')}
-              </div>
+            <div className="relative min-h-[220px] sm:min-h-[280px] rounded-2xl overflow-hidden bg-milano-800 border-2 border-dashed border-milano-600 flex flex-col items-center justify-center text-milano-400">
+              <Image className="w-12 h-12 mb-2 opacity-50" />
+              <p className="text-xs font-semibold px-4 text-center">{t('home.storeFrontCap')}</p>
+              <p className="text-[10px] mt-1 opacity-70">Add your storefront photo</p>
             </div>
-            <div className="relative min-h-[220px] sm:min-h-[280px] rounded-2xl overflow-hidden group">
-              <img
-                src="/store/Interior_Racks.png"
-                alt="Intérieur ARENA FASHION - Jeans, T-Shirts & Sneakers"
-                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/80 to-transparent text-[11px] font-bold text-white">
-                {t('home.storeRacksCap')}
-              </div>
+            <div className="relative min-h-[220px] sm:min-h-[280px] rounded-2xl overflow-hidden bg-milano-800 border-2 border-dashed border-milano-600 flex flex-col items-center justify-center text-milano-400">
+              <Image className="w-12 h-12 mb-2 opacity-50" />
+              <p className="text-xs font-semibold px-4 text-center">{t('home.storeRacksCap')}</p>
+              <p className="text-[10px] mt-1 opacity-70">Add your interior photo</p>
             </div>
           </div>
 

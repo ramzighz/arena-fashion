@@ -14,7 +14,7 @@ export function Checkout() {
     street: '',
     city: '',
     state: '',
-    country: 'Algeria',
+    country: 'United States',
     phone: '',
   });
 
@@ -112,7 +112,7 @@ export function Checkout() {
                 <input
                   type="text"
                   required
-                  placeholder="Yacine Belkacem"
+                  placeholder="John Smith"
                   value={shippingForm.fullName}
                   onChange={(e) => setShippingForm({ ...shippingForm, fullName: e.target.value })}
                   className="w-full p-2.5 rounded border border-milano-300 dark:border-milano-700 bg-transparent text-milano-900 dark:text-white placeholder:text-milano-400 dark:placeholder:text-milano-500"
@@ -124,7 +124,7 @@ export function Checkout() {
                 <input
                   type="text"
                   required
-                  placeholder="45 Rue Didouche Mourad"
+                  placeholder="123 Main Street"
                   value={shippingForm.street}
                   onChange={(e) => setShippingForm({ ...shippingForm, street: e.target.value })}
                   className="w-full p-2.5 rounded border border-milano-300 dark:border-milano-700 bg-transparent text-milano-900 dark:text-white placeholder:text-milano-400 dark:placeholder:text-milano-500"
@@ -136,7 +136,7 @@ export function Checkout() {
                 <input
                   type="text"
                   required
-                  placeholder="Oran"
+                  placeholder="Your City"
                   value={shippingForm.city}
                   onChange={(e) => setShippingForm({ ...shippingForm, city: e.target.value })}
                   className="w-full p-2.5 rounded border border-milano-300 dark:border-milano-700 bg-transparent text-milano-900 dark:text-white placeholder:text-milano-400 dark:placeholder:text-milano-500"
@@ -148,7 +148,7 @@ export function Checkout() {
                 <input
                   type="text"
                   required
-                  placeholder="Constantine"
+                  placeholder="ST"
                   value={shippingForm.state}
                   onChange={(e) => setShippingForm({ ...shippingForm, state: e.target.value })}
                   className="w-full p-2.5 rounded border border-milano-300 dark:border-milano-700 bg-transparent text-milano-900 dark:text-white placeholder:text-milano-400 dark:placeholder:text-milano-500"

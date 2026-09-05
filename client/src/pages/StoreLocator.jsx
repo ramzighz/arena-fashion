@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Phone, Clock, Navigation, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Clock, Navigation, MessageCircle, Image } from 'lucide-react';
 import { STORE_LOCATIONS } from '../data/catalog.js';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -33,17 +33,10 @@ export function StoreLocator() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Main Large Display */}
-          <div className="lg:col-span-8 aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden bg-milano-950 border border-milano-200 dark:border-milano-800 relative group shadow-lg">
-            <img
-              src={store.images[activeImageIndex].url}
-              alt={store.images[activeImageIndex].caption}
-              className="w-full h-full object-cover object-center transition-all duration-300"
-            />
-            <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white">
-              <p className="text-xs sm:text-sm font-semibold">
-                {store.images[activeImageIndex].caption}
-              </p>
-            </div>
+          <div className="lg:col-span-8 aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden bg-milano-100 dark:bg-milano-800 border-2 border-dashed border-milano-300 dark:border-milano-600 relative group shadow-lg flex flex-col items-center justify-center text-milano-400 dark:text-milano-500">
+            <Image className="w-16 h-16 mb-3 opacity-50" />
+            <p className="text-sm font-semibold">{store.images[activeImageIndex].caption}</p>
+            <p className="text-xs mt-1 opacity-70">Replace with your store photo</p>
           </div>
 
           {/* Thumbnails list */}
@@ -59,11 +52,9 @@ export function StoreLocator() {
                     : 'border-transparent bg-milano-50 dark:bg-milano-950 opacity-70 hover:opacity-100'
                 }`}
               >
-                <img
-                  src={img.url}
-                  alt={img.caption}
-                  className="w-20 h-16 rounded-lg object-cover shrink-0"
-                />
+                <div className="w-20 h-16 rounded-lg bg-milano-200 dark:bg-milano-700 shrink-0 flex items-center justify-center">
+                  <Image className="w-6 h-6 text-milano-400" />
+                </div>
                 <div className="hidden sm:block min-w-0">
                   <span className="text-xs font-bold text-milano-900 dark:text-white line-clamp-1">
                     {img.caption}
@@ -179,7 +170,7 @@ export function StoreLocator() {
                 {t('stores.locationTitle')}
               </h3>
               <span className="text-xs font-mono text-milano-500">
-                Code Plus: P5CH+2WP
+                Code Plus: YOUR-CODE
               </span>
             </div>
 
@@ -190,7 +181,7 @@ export function StoreLocator() {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <h4 className="font-extrabold text-base uppercase text-white tracking-wide">
-                  ARENA FASHION
+                  YOUR BUSINESS NAME
                 </h4>
                 <p className="text-xs text-milano-300 max-w-sm">
                   {store.address}

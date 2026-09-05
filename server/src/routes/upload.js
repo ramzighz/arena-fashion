@@ -29,7 +29,7 @@ router.post('/', requireSeller, upload.single('image'), async (req, res, next) =
   try {
     const url = await new Promise((resolve, reject) => {
       const stream = cloudinary.uploader.upload_stream(
-        { folder: 'arena-fashion-products', resource_type: 'image' },
+        { folder: 'your-business-products', resource_type: 'image' },
         (err, result) => (err ? reject(err) : resolve(result.secure_url))
       );
       stream.end(req.file.buffer);

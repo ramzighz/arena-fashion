@@ -21,7 +21,10 @@ const isSameDay = (iso, ref) => {
 };
 
 export function Seller() {
-  const [sellerKey, setSellerKey] = useState(() => sessionStorage.getItem('sellerKey') || '');
+  const [sellerKey, setSellerKey] = useState(() => {
+    // Only restore from sessionStorage if previously set
+    try { return sessionStorage.getItem('arena_seller_key') || ''; } catch { return ''; }
+  });
   const [unlocked, setUnlocked] = useState(false);
   const [keyInput, setKeyInput] = useState('');
   const [authError, setAuthError] = useState('');
@@ -42,7 +45,7 @@ export function Seller() {
       if (res.status === 401) {
         setAuthError('Incorrect password');
         setUnlocked(false);
-        sessionStorage.removeItem('sellerKey');
+        sessionStorage.removeItem('arena_seller_key');
         setSellerKey('');
         setOrders([]);
         return false;
@@ -70,14 +73,14 @@ export function Seller() {
     if (!keyInput) return;
     const ok = await loadOrders(keyInput);
     if (ok) {
-      sessionStorage.setItem('sellerKey', keyInput);
+      sessionStorage.setItem('arena_seller_key', keyInput);
       setSellerKey(keyInput);
       setKeyInput('');
     }
   };
 
   const handleLogout = () => {
-    sessionStorage.removeItem('sellerKey');
+    sessionStorage.removeItem('arena_seller_key');
     setSellerKey('');
     setUnlocked(false);
     setOrders([]);
