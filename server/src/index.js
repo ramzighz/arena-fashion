@@ -114,6 +114,7 @@ app.get('/api/health', (req, res) => {
     status: 'healthy',
     brand: 'Your Business Name',
     currency: 'DZD',
+    version: '1.1.0',
     timestamp: new Date().toISOString(),
   });
 });
